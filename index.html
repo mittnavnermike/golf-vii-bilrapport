@@ -35,6 +35,10 @@ a{color:var(--accent)}
 .presets{display:flex;gap:6px}
 .preset{font-family:var(--fb);font-size:13px;font-weight:500;padding:7px 13px;border:1px solid var(--line);background:var(--card);border-radius:99px;cursor:pointer;color:var(--ink)}
 .preset:hover{border-color:var(--accent)}.preset.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.profiles{display:flex;gap:4px;align-items:center}
+.plabel{font-size:10.5px;color:var(--soft);text-transform:uppercase;letter-spacing:.06em;margin-right:2px}
+.pbtn{font-size:12.5px;padding:5px 10px;border:1px solid var(--line);background:var(--card);border-radius:99px;cursor:pointer;color:var(--soft)}
+.pbtn:hover{border-color:var(--accent)}.pbtn.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 .ctl{display:flex;flex-direction:column;gap:2px;font-size:12px;color:var(--soft)}
 .ctl .row{display:flex;align-items:center;gap:7px}
 .ctl output,.ctl .mono{font-family:var(--fm);font-weight:600;color:var(--ink)}
@@ -150,7 +154,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 </style></head><body>
 
 <header class="hero"><div class="hero-in">
-  <div class="eyebrow">Bilresearch · Finn.no · 2026-06-30 14:41</div>
+  <div class="eyebrow">Bilresearch · Finn.no · 2026-07-01 20:17</div>
   <h1>Golf VII<b>.</b></h1>
   <div class="sub">114 kandidater saumfart for et kort sommereie. Rangert på avveiningen <b style="color:#fff">risiko mot kostnad</b> — ikke skjult i én tallscore.</div>
   <div class="readout">
@@ -170,6 +174,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
     <button class="preset" data-sort="km">Lavest km</button>
     <button class="preset" data-sort="year">Nyeste</button>
   </div>
+  <div class="profiles"><span class="plabel">Beregning</span><button class="pbtn on" data-profile="balansert" title="">Balansert</button><button class="pbtn" data-profile="utenavstand" title="Ignorer reisetid i rangeringen">Uten avstand</button><button class="pbtn" data-profile="lavrisiko" title="">Lav risiko</button><button class="pbtn" data-profile="billigst" title="">Billigst</button></div>
   <label class="chk"><input type="checkbox" id="fFront"> Kun Pareto-front</label>
   <input class="search" id="fSearch" type="search" placeholder="Søk modell/område…">
   <button class="linkbtn" onclick="document.getElementById('explain').classList.add('on')">ℹ︎ Slik scorer vi</button>
@@ -180,7 +185,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467986417" data-rank="1" data-risk="50" data-fit="79"
      data-net="15550" data-price="109500" data-km="146011"
-     data-year="2015" data-front="1" data-search="volkswagen golf vii  2.0 tdi (ea288) forhandler navigasjon skinn led/xenon lys alufelger parkeringsvarme dab+"
+     data-year="2015" data-front="1" data-search="volkswagen golf vii  2.0 tdi (ea288) forhandler navigasjon skinn led/xenon lys alufelger parkeringsvarme dab+" data-util-balansert="0.6351" data-fit-balansert="79" data-util-utenavstand="0.6471" data-fit-utenavstand="85" data-util-lavrisiko="0.5942" data-fit-lavrisiko="79" data-util-billigst="0.6737" data-fit-billigst="85"
      onclick="openD('467986417')" onkeydown="if(event.key==='Enter')openD('467986417')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467986417/316d36a9-e163-4f0d-8fda-f75d9b08e924" alt="">
@@ -221,7 +226,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="453488155" data-rank="2" data-risk="50" data-fit="80"
      data-net="16900" data-price="89000" data-km="86000"
-     data-year="2013" data-front="0" data-search="volkswagen golf plus fredrikstad 1.6 tdi (ea288) forhandler alufelger"
+     data-year="2013" data-front="0" data-search="volkswagen golf plus fredrikstad 1.6 tdi (ea288) forhandler alufelger" data-util-balansert="0.6196" data-fit-balansert="80" data-util-utenavstand="0.6416" data-fit-utenavstand="91" data-util-lavrisiko="0.5842" data-fit-lavrisiko="80" data-util-billigst="0.6552" data-fit-billigst="91"
      onclick="openD('453488155')" onkeydown="if(event.key==='Enter')openD('453488155')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/453488155/198263e2-47dd-4829-b12c-761d55cf1ab9" alt="">
@@ -262,7 +267,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="449708907" data-rank="3" data-risk="50" data-fit="80"
      data-net="17663" data-price="99900" data-km="98000"
-     data-year="2013" data-front="0" data-search="volkswagen golf plus sarpsborg 1.6 tdi (ea288) forhandler led/xenon lys dab+"
+     data-year="2013" data-front="0" data-search="volkswagen golf plus sarpsborg 1.6 tdi (ea288) forhandler led/xenon lys dab+" data-util-balansert="0.6097" data-fit-balansert="80" data-util-utenavstand="0.6317" data-fit-utenavstand="91" data-util-lavrisiko="0.5777" data-fit-lavrisiko="80" data-util-billigst="0.6397" data-fit-billigst="91"
      onclick="openD('449708907')" onkeydown="if(event.key==='Enter')openD('449708907')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/449708907/67c6ee81-bd58-4037-9e14-46f4634fcf1d" alt="">
@@ -303,7 +308,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="450717224" data-rank="4" data-risk="41" data-fit="86"
      data-net="21933" data-price="116900" data-km="93000"
-     data-year="2014" data-front="1" data-search="volkswagen golf vii  1.4 tsi (ea211) forhandler led/xenon lys alufelger skinnratt dab+"
+     data-year="2014" data-front="1" data-search="volkswagen golf vii  1.4 tsi (ea211) forhandler led/xenon lys alufelger skinnratt dab+" data-util-balansert="0.6069" data-fit-balansert="86" data-util-utenavstand="0.6209" data-fit-utenavstand="93" data-util-lavrisiko="0.6061" data-fit-lavrisiko="86" data-util-billigst="0.5827" data-fit-billigst="93"
      onclick="openD('450717224')" onkeydown="if(event.key==='Enter')openD('450717224')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/450717224/7c4b000b-31f9-4a8c-a810-746f9f5b895b" alt="">
@@ -344,7 +349,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="464076005" data-rank="5" data-risk="53" data-fit="76"
      data-net="16270" data-price="80000" data-km="144000"
-     data-year="2013" data-front="0" data-search="volkswagen golf plus hønefoss 1.6 tdi (ea288) forhandler navigasjon alufelger dab+"
+     data-year="2013" data-front="0" data-search="volkswagen golf plus hønefoss 1.6 tdi (ea288) forhandler navigasjon alufelger dab+" data-util-balansert="0.6063" data-fit-balansert="76" data-util-utenavstand="0.6163" data-fit-utenavstand="81" data-util-lavrisiko="0.565" data-fit-lavrisiko="76" data-util-billigst="0.644" data-fit-billigst="81"
      onclick="openD('464076005')" onkeydown="if(event.key==='Enter')openD('464076005')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/464076005/bef79ca1-b6f1-474d-b5bd-13dbeac4cc59" alt="">
@@ -385,7 +390,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="445175155" data-rank="6" data-risk="55" data-fit="80"
      data-net="16278" data-price="119900" data-km="149500"
-     data-year="2015" data-front="0" data-search="volkswagen golf i  2.0 tdi (ea288) forhandler navigasjon skinn led/xenon lys"
+     data-year="2015" data-front="0" data-search="volkswagen golf i  2.0 tdi (ea288) forhandler navigasjon skinn led/xenon lys" data-util-balansert="0.6052" data-fit-balansert="80" data-util-utenavstand="0.6172" data-fit-utenavstand="86" data-util-lavrisiko="0.5585" data-fit-lavrisiko="80" data-util-billigst="0.6454" data-fit-billigst="86"
      onclick="openD('445175155')" onkeydown="if(event.key==='Enter')openD('445175155')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/445175155/5265e1fc-bf35-4ab9-8b2a-e993011ad4cc" alt="">
@@ -426,7 +431,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="453639446" data-rank="7" data-risk="52" data-fit="81"
      data-net="18223" data-price="107900" data-km="132000"
-     data-year="2013" data-front="0" data-search="volkswagen golf vii  1.6 tdi (ea288) forhandler navigasjon skinn adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt dab+"
+     data-year="2013" data-front="0" data-search="volkswagen golf vii  1.6 tdi (ea288) forhandler navigasjon skinn adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt dab+" data-util-balansert="0.5955" data-fit-balansert="81" data-util-utenavstand="0.6075" data-fit-utenavstand="87" data-util-lavrisiko="0.562" data-fit-lavrisiko="81" data-util-billigst="0.6163" data-fit-billigst="87"
      onclick="openD('453639446')" onkeydown="if(event.key==='Enter')openD('453639446')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/453639446/5130c1e3-459a-463b-aaec-8bdd9f298214" alt="">
@@ -467,7 +472,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="465585387" data-rank="8" data-risk="55" data-fit="80"
      data-net="17600" data-price="99000" data-km="140200"
-     data-year="2014" data-front="0" data-search="volkswagen golf sportsvan  1.6 tdi (ea288) forhandler navigasjon ryggekamera adaptiv cruise led/xenon lys alufelger skinnratt dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf sportsvan  1.6 tdi (ea288) forhandler navigasjon ryggekamera adaptiv cruise led/xenon lys alufelger skinnratt dab+" data-util-balansert="0.5881" data-fit-balansert="80" data-util-utenavstand="0.5981" data-fit-utenavstand="85" data-util-lavrisiko="0.5472" data-fit-lavrisiko="80" data-util-billigst="0.6169" data-fit-billigst="85"
      onclick="openD('465585387')" onkeydown="if(event.key==='Enter')openD('465585387')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/465585387/e6f3ee3d-24af-4c5e-bfe8-b0e62bc72b09" alt="">
@@ -508,7 +513,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="461614370" data-rank="9" data-risk="52" data-fit="79"
      data-net="19066" data-price="119942" data-km="71632"
-     data-year="2013" data-front="0" data-search="volkswagen golf vii elverum 1.6 tdi (ea288) privat navigasjon ryggekamera alufelger parkeringsvarme skinnratt dab+"
+     data-year="2013" data-front="0" data-search="volkswagen golf vii elverum 1.6 tdi (ea288) privat navigasjon ryggekamera alufelger parkeringsvarme skinnratt dab+" data-util-balansert="0.5806" data-fit-balansert="79" data-util-utenavstand="0.6006" data-fit-utenavstand="89" data-util-lavrisiko="0.5518" data-fit-lavrisiko="79" data-util-billigst="0.6021" data-fit-billigst="89"
      onclick="openD('461614370')" onkeydown="if(event.key==='Enter')openD('461614370')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/461614370/f81864c8-63c2-42d3-8f14-ba5b1f7d1b12" alt="">
@@ -549,7 +554,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468520269" data-rank="10" data-risk="59" data-fit="77"
      data-net="16620" data-price="84999" data-km="123800"
-     data-year="2014" data-front="0" data-search="volkswagen golf plus halden 1.6 tdi (ea288) forhandler skinn adaptiv cruise skinnratt dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf plus halden 1.6 tdi (ea288) forhandler skinn adaptiv cruise skinnratt dab+" data-util-balansert="0.5768" data-fit-balansert="77" data-util-utenavstand="0.5968" data-fit-utenavstand="87" data-util-lavrisiko="0.5263" data-fit-lavrisiko="77" data-util-billigst="0.6279" data-fit-billigst="87"
      onclick="openD('468520269')" onkeydown="if(event.key==='Enter')openD('468520269')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468520269/90060f12-e8a6-4583-95d3-b36ee762606f" alt="">
@@ -590,7 +595,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="462745035" data-rank="11" data-risk="55" data-fit="82"
      data-net="19000" data-price="119000" data-km="92000"
-     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan drammen 1.6 tdi (ea288) forhandler navigasjon ryggekamera adaptiv cruise led/xenon lys"
+     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan drammen 1.6 tdi (ea288) forhandler navigasjon ryggekamera adaptiv cruise led/xenon lys" data-util-balansert="0.5739" data-fit-balansert="82" data-util-utenavstand="0.5859" data-fit-utenavstand="88" data-util-lavrisiko="0.5383" data-fit-lavrisiko="82" data-util-billigst="0.5929" data-fit-billigst="88"
      onclick="openD('462745035')" onkeydown="if(event.key==='Enter')openD('462745035')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/462745035/bf7c0076-8a9a-4ab8-aaf8-17de3b2d4924" alt="">
@@ -631,7 +636,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468085077" data-rank="12" data-risk="63" data-fit="85"
      data-net="17200" data-price="119000" data-km="144000"
-     data-year="2017" data-front="0" data-search="volkswagen golf vii drøbak 1.5 tsi (ea211 evo) forhandler apple carplay android auto navigasjon skinn adaptiv cruise led/xenon lys alufelger dab+"
+     data-year="2017" data-front="0" data-search="volkswagen golf vii drøbak 1.5 tsi (ea211 evo) forhandler apple carplay android auto navigasjon skinn adaptiv cruise led/xenon lys alufelger dab+" data-util-balansert="0.5672" data-fit-balansert="85" data-util-utenavstand="0.5712" data-fit-utenavstand="87" data-util-lavrisiko="0.5085" data-fit-lavrisiko="85" data-util-billigst="0.6041" data-fit-billigst="87"
      onclick="openD('468085077')" onkeydown="if(event.key==='Enter')openD('468085077')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468085077/8d99d4e7-b6ad-4873-91f5-4df5df1b9dd5" alt="">
@@ -672,7 +677,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="465177466" data-rank="13" data-risk="60" data-fit="81"
      data-net="17670" data-price="99999" data-km="136000"
-     data-year="2014" data-front="0" data-search="volkswagen golf vii ski 1.6 tdi (ea288) forhandler navigasjon dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf vii ski 1.6 tdi (ea288) forhandler navigasjon dab+" data-util-balansert="0.5666" data-fit-balansert="81" data-util-utenavstand="0.5666" data-fit-utenavstand="81" data-util-lavrisiko="0.5171" data-fit-lavrisiko="81" data-util-billigst="0.5945" data-fit-billigst="81"
      onclick="openD('465177466')" onkeydown="if(event.key==='Enter')openD('465177466')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/465177466/6259ded7-84b4-4cab-95c9-ec5cda2e732f" alt="">
@@ -713,7 +718,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="445272920" data-rank="14" data-risk="46" data-fit="77"
      data-net="22143" data-price="119900" data-km="93654"
-     data-year="2013" data-front="0" data-search="volkswagen golf vii bryne 1.4 tsi (ea211) forhandler navigasjon skinn adaptiv cruise led/xenon lys alufelger skinnratt dab+"
+     data-year="2013" data-front="0" data-search="volkswagen golf vii bryne 1.4 tsi (ea211) forhandler navigasjon skinn adaptiv cruise led/xenon lys alufelger skinnratt dab+" data-util-balansert="0.5637" data-fit-balansert="77" data-util-utenavstand="0.5917" data-fit-utenavstand="91" data-util-lavrisiko="0.5598" data-fit-lavrisiko="77" data-util-billigst="0.5604" data-fit-billigst="91"
      onclick="openD('445272920')" onkeydown="if(event.key==='Enter')openD('445272920')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/445272920/38f833a0-71cf-49ec-bd94-99ff258f6b13" alt="">
@@ -754,7 +759,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="433043324" data-rank="15" data-risk="50" data-fit="91"
      data-net="23823" data-price="113900" data-km="67000"
-     data-year="2014" data-front="0" data-search="volkswagen golf plus skedsmokorset 1.2 tsi (ea211) forhandler alufelger skinnratt dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf plus skedsmokorset 1.2 tsi (ea211) forhandler alufelger skinnratt dab+" data-util-balansert="0.5519" data-fit-balansert="91" data-util-utenavstand="0.5579" data-fit-utenavstand="94" data-util-lavrisiko="0.5417" data-fit-lavrisiko="91" data-util-billigst="0.5187" data-fit-billigst="94"
      onclick="openD('433043324')" onkeydown="if(event.key==='Enter')openD('433043324')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/433043324/37ab0177-73a2-4858-bee7-4519801a22e6" alt="">
@@ -795,7 +800,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="466301969" data-rank="16" data-risk="56" data-fit="85"
      data-net="20820" data-price="71000" data-km="96400"
-     data-year="2013" data-front="0" data-search="volkswagen golf plus  1.2 tsi (ea211) forhandler alufelger dab+"
+     data-year="2013" data-front="0" data-search="volkswagen golf plus  1.2 tsi (ea211) forhandler alufelger dab+" data-util-balansert="0.5518" data-fit-balansert="85" data-util-utenavstand="0.5658" data-fit-utenavstand="92" data-util-lavrisiko="0.5211" data-fit-lavrisiko="85" data-util-billigst="0.5589" data-fit-billigst="92"
      onclick="openD('466301969')" onkeydown="if(event.key==='Enter')openD('466301969')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/466301969/1530b048-bb4e-473c-bd2e-03c62b54c303" alt="">
@@ -836,7 +841,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468072734" data-rank="17" data-risk="64" data-fit="70"
      data-net="16263" data-price="79900" data-km="134460"
-     data-year="2014" data-front="0" data-search="volkswagen golf plus sandnes 1.6 tdi (ea288) forhandler ryggekamera parkeringsvarme panorama/soltak dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf plus sandnes 1.6 tdi (ea288) forhandler ryggekamera parkeringsvarme panorama/soltak dab+" data-util-balansert="0.5449" data-fit-balansert="70" data-util-utenavstand="0.5729" data-fit-utenavstand="84" data-util-lavrisiko="0.4878" data-fit-lavrisiko="70" data-util-billigst="0.6157" data-fit-billigst="84"
      onclick="openD('468072734')" onkeydown="if(event.key==='Enter')openD('468072734')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468072734/cf8ef4cf-a9f4-4754-9691-2a46f3327b3b" alt="">
@@ -877,7 +882,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468057377" data-rank="18" data-risk="58" data-fit="74"
      data-net="19000" data-price="119000" data-km="99635"
-     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan  1.6 tdi (ea288) forhandler skinn adaptiv cruise"
+     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan  1.6 tdi (ea288) forhandler skinn adaptiv cruise" data-util-balansert="0.5444" data-fit-balansert="74" data-util-utenavstand="0.5544" data-fit-utenavstand="79" data-util-lavrisiko="0.5077" data-fit-lavrisiko="74" data-util-billigst="0.5704" data-fit-billigst="79"
      onclick="openD('468057377')" onkeydown="if(event.key==='Enter')openD('468057377')">
     <div class="card-img">
       <div class="noimg">ingen bilder</div>
@@ -918,7 +923,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="457338488" data-rank="19" data-risk="59" data-fit="76"
      data-net="19000" data-price="119000" data-km="134835"
-     data-year="2014" data-front="0" data-search="volkswagen golf vii halden 1.6 tdi (ea288) forhandler navigasjon skinn adaptiv cruise led/xenon lys parkeringsvarme dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf vii halden 1.6 tdi (ea288) forhandler navigasjon skinn adaptiv cruise led/xenon lys parkeringsvarme dab+" data-util-balansert="0.5439" data-fit-balansert="76" data-util-utenavstand="0.5659" data-fit-utenavstand="87" data-util-lavrisiko="0.5045" data-fit-lavrisiko="76" data-util-billigst="0.5794" data-fit-billigst="87"
      onclick="openD('457338488')" onkeydown="if(event.key==='Enter')openD('457338488')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/457338488/66239014-9e14-444e-9ff4-a4745ab3b732" alt="">
@@ -959,7 +964,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468060152" data-rank="20" data-risk="64" data-fit="69"
      data-net="16284" data-price="119990" data-km="149000"
-     data-year="2013" data-front="0" data-search="volkswagen golf vii  2.0 tdi (ea288) forhandler skinn ryggekamera adaptiv cruise parkeringsvarme"
+     data-year="2013" data-front="0" data-search="volkswagen golf vii  2.0 tdi (ea288) forhandler skinn ryggekamera adaptiv cruise parkeringsvarme" data-util-balansert="0.5426" data-fit-balansert="69" data-util-utenavstand="0.5486" data-fit-utenavstand="72" data-util-lavrisiko="0.4861" data-fit-lavrisiko="69" data-util-billigst="0.5973" data-fit-billigst="72"
      onclick="openD('468060152')" onkeydown="if(event.key==='Enter')openD('468060152')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468060152/d0d50337-5f85-4833-b98f-289eb6fd6eeb" alt="">
@@ -1000,7 +1005,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="455789994" data-rank="21" data-risk="55" data-fit="82"
      data-net="21450" data-price="109999" data-km="110500"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii  1.4 tsi (ea211) forhandler navigasjon skinn adaptiv cruise led/xenon lys alufelger skinnratt dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii  1.4 tsi (ea211) forhandler navigasjon skinn adaptiv cruise led/xenon lys alufelger skinnratt dab+" data-util-balansert="0.5421" data-fit-balansert="82" data-util-utenavstand="0.5541" data-fit-utenavstand="88" data-util-lavrisiko="0.5174" data-fit-lavrisiko="82" data-util-billigst="0.543" data-fit-billigst="88"
      onclick="openD('455789994')" onkeydown="if(event.key==='Enter')openD('455789994')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/455789994/ad515167-432a-49d3-b67a-1fe2045c9250" alt="">
@@ -1041,7 +1046,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="465161849" data-rank="22" data-risk="44" data-fit="76"
      data-net="24411" data-price="129000" data-km="135000"
-     data-year="2017" data-front="0" data-search="volkswagen golf vii gjøvik ukjent variant forhandler parkeringsvarme dab+"
+     data-year="2017" data-front="0" data-search="volkswagen golf vii gjøvik ukjent variant forhandler parkeringsvarme dab+" data-util-balansert="0.5413" data-fit-balansert="76" data-util-utenavstand="0.5613" data-fit-utenavstand="86" data-util-lavrisiko="0.5514" data-fit-lavrisiko="76" data-util-billigst="0.5127" data-fit-billigst="86"
      onclick="openD('465161849')" onkeydown="if(event.key==='Enter')openD('465161849')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/465161849/0325f0eb-2ea4-4114-9dda-e5f68a978a1b" alt="">
@@ -1082,7 +1087,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="463493252" data-rank="23" data-risk="62" data-fit="80"
      data-net="19070" data-price="119999" data-km="135000"
-     data-year="2014" data-front="0" data-search="volkswagen golf sportsvan drammen 1.6 tdi (ea288) forhandler navigasjon ryggekamera led/xenon lys alufelger skinnratt dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf sportsvan drammen 1.6 tdi (ea288) forhandler navigasjon ryggekamera led/xenon lys alufelger skinnratt dab+" data-util-balansert="0.5375" data-fit-balansert="80" data-util-utenavstand="0.5495" data-fit-utenavstand="86" data-util-lavrisiko="0.4913" data-fit-lavrisiko="80" data-util-billigst="0.5675" data-fit-billigst="86"
      onclick="openD('463493252')" onkeydown="if(event.key==='Enter')openD('463493252')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/463493252/41d56168-a1b5-429a-a636-7b492ba33563" alt="">
@@ -1123,7 +1128,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="466562854" data-rank="24" data-risk="60" data-fit="90"
      data-net="21800" data-price="115000" data-km="95000"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii oslo 1.4 tsi (ea211) forhandler navigasjon skinn adaptiv cruise led/xenon lys parkeringsvarme"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii oslo 1.4 tsi (ea211) forhandler navigasjon skinn adaptiv cruise led/xenon lys parkeringsvarme" data-util-balansert="0.5311" data-fit-balansert="90" data-util-utenavstand="0.5271" data-fit-utenavstand="88" data-util-lavrisiko="0.4954" data-fit-lavrisiko="90" data-util-billigst="0.5209" data-fit-billigst="88"
      onclick="openD('466562854')" onkeydown="if(event.key==='Enter')openD('466562854')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/466562854/74621d9f-801a-49fd-980a-16a2041fefd5" alt="">
@@ -1164,7 +1169,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="464129016" data-rank="25" data-risk="61" data-fit="79"
      data-net="20043" data-price="89900" data-km="142120"
-     data-year="2014" data-front="0" data-search="volkswagen golf vii  1.4 tsi (ea211) forhandler ryggekamera adaptiv cruise led/xenon lys alufelger skinnratt"
+     data-year="2014" data-front="0" data-search="volkswagen golf vii  1.4 tsi (ea211) forhandler ryggekamera adaptiv cruise led/xenon lys alufelger skinnratt" data-util-balansert="0.5274" data-fit-balansert="79" data-util-utenavstand="0.5374" data-fit-utenavstand="84" data-util-lavrisiko="0.4877" data-fit-lavrisiko="79" data-util-billigst="0.5477" data-fit-billigst="84"
      onclick="openD('464129016')" onkeydown="if(event.key==='Enter')openD('464129016')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/464129016/fd0cacfb-b5c3-47cc-acc4-0529f4014bff" alt="">
@@ -1205,7 +1210,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468308711" data-rank="26" data-risk="69" data-fit="83"
      data-net="18436" data-price="66942" data-km="101917"
-     data-year="2014" data-front="0" data-search="volkswagen golf vii oslo 1.4 tsi (ea211) privat "
+     data-year="2014" data-front="0" data-search="volkswagen golf vii oslo 1.4 tsi (ea211) privat " data-util-balansert="0.5202" data-fit-balansert="83" data-util-utenavstand="0.5142" data-fit-utenavstand="80" data-util-lavrisiko="0.4578" data-fit-lavrisiko="83" data-util-billigst="0.5504" data-fit-billigst="80"
      onclick="openD('468308711')" onkeydown="if(event.key==='Enter')openD('468308711')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468308711/fd546d6a-323f-4025-a2f6-44ce8b4543df" alt="">
@@ -1246,7 +1251,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467089312" data-rank="27" data-risk="65" data-fit="78"
      data-net="19063" data-price="119900" data-km="147200"
-     data-year="2016" data-front="0" data-search="volkswagen golf vii  1.6 tdi (ea288) forhandler apple carplay android auto navigasjon skinn adaptiv cruise alufelger parkeringsvarme dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf vii  1.6 tdi (ea288) forhandler apple carplay android auto navigasjon skinn adaptiv cruise alufelger parkeringsvarme dab+" data-util-balansert="0.5201" data-fit-balansert="78" data-util-utenavstand="0.5321" data-fit-utenavstand="84" data-util-lavrisiko="0.4698" data-fit-lavrisiko="78" data-util-billigst="0.5556" data-fit-billigst="84"
      onclick="openD('467089312')" onkeydown="if(event.key==='Enter')openD('467089312')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467089312/fd56f0b1-ee83-4a3b-9c04-dbea1df89196" alt="">
@@ -1287,7 +1292,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467501405" data-rank="28" data-risk="66" data-fit="79"
      data-net="19059" data-price="119842" data-km="118500"
-     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan  1.6 tdi (ea288) privat navigasjon ryggekamera alufelger skinnratt dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan  1.6 tdi (ea288) privat navigasjon ryggekamera alufelger skinnratt dab+" data-util-balansert="0.5176" data-fit-balansert="79" data-util-utenavstand="0.5296" data-fit-utenavstand="85" data-util-lavrisiko="0.4651" data-fit-lavrisiko="79" data-util-billigst="0.5542" data-fit-billigst="85"
      onclick="openD('467501405')" onkeydown="if(event.key==='Enter')openD('467501405')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467501405/72627879-f503-4412-9627-13b5a01546db" alt="">
@@ -1328,7 +1333,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="464158189" data-rank="29" data-risk="64" data-fit="89"
      data-net="21380" data-price="109000" data-km="145000"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii oslo 1.4 tsi (ea211) forhandler navigasjon skinn ryggekamera adaptiv cruise skinnratt dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii oslo 1.4 tsi (ea211) forhandler navigasjon skinn ryggekamera adaptiv cruise skinnratt dab+" data-util-balansert="0.5166" data-fit-balansert="89" data-util-utenavstand="0.5126" data-fit-utenavstand="87" data-util-lavrisiko="0.4727" data-fit-lavrisiko="89" data-util-billigst="0.5159" data-fit-billigst="87"
      onclick="openD('464158189')" onkeydown="if(event.key==='Enter')openD('464158189')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/464158189/718d2004-4eec-472c-a949-fac9120d0fd7" alt="">
@@ -1369,7 +1374,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467190529" data-rank="30" data-risk="52" data-fit="75"
      data-net="23900" data-price="115000" data-km="89000"
-     data-year="2013" data-front="0" data-search="volkswagen golf-serie kristiansand 1.2 tsi (ea211) forhandler alufelger skinnratt dab+"
+     data-year="2013" data-front="0" data-search="volkswagen golf-serie kristiansand 1.2 tsi (ea211) forhandler alufelger skinnratt dab+" data-util-balansert="0.5099" data-fit-balansert="75" data-util-utenavstand="0.5379" data-fit-utenavstand="89" data-util-lavrisiko="0.5047" data-fit-lavrisiko="75" data-util-billigst="0.5036" data-fit-billigst="89"
      onclick="openD('467190529')" onkeydown="if(event.key==='Enter')openD('467190529')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467190529/f653c38d-cf02-4156-beb0-6b12ce6f30a8" alt="">
@@ -1410,7 +1415,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="442720992" data-rank="31" data-risk="65" data-fit="88"
      data-net="21443" data-price="109900" data-km="135000"
-     data-year="2014" data-front="0" data-search="volkswagen golf vii oslo 1.4 tsi (ea211) forhandler skinnratt"
+     data-year="2014" data-front="0" data-search="volkswagen golf vii oslo 1.4 tsi (ea211) forhandler skinnratt" data-util-balansert="0.5092" data-fit-balansert="88" data-util-utenavstand="0.5052" data-fit-utenavstand="86" data-util-lavrisiko="0.4645" data-fit-lavrisiko="88" data-util-billigst="0.5102" data-fit-billigst="86"
      onclick="openD('442720992')" onkeydown="if(event.key==='Enter')openD('442720992')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/442720992/c987ad7b-55a0-4483-a6df-9353bfd8a98c" alt="">
@@ -1451,7 +1456,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468125923" data-rank="32" data-risk="59" data-fit="83"
      data-net="22780" data-price="99000" data-km="107000"
-     data-year="2014" data-front="0" data-search="volkswagen golf vii  1.2 tsi (ea211) forhandler dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf vii  1.2 tsi (ea211) forhandler dab+" data-util-balansert="0.5089" data-fit-balansert="83" data-util-utenavstand="0.5229" data-fit-utenavstand="90" data-util-lavrisiko="0.4828" data-fit-lavrisiko="83" data-util-billigst="0.5069" data-fit-billigst="90"
      onclick="openD('468125923')" onkeydown="if(event.key==='Enter')openD('468125923')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468125923/3623b465-a0dd-446b-93e8-6666125d1b5c" alt="">
@@ -1492,7 +1497,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467203986" data-rank="33" data-risk="55" data-fit="78"
      data-net="23550" data-price="109999" data-km="50000"
-     data-year="2013" data-front="0" data-search="volkswagen golf vii sandnes 1.2 tsi (ea211) forhandler alufelger"
+     data-year="2013" data-front="0" data-search="volkswagen golf vii sandnes 1.2 tsi (ea211) forhandler alufelger" data-util-balansert="0.5069" data-fit-balansert="78" data-util-utenavstand="0.5369" data-fit-utenavstand="93" data-util-lavrisiko="0.4935" data-fit-lavrisiko="78" data-util-billigst="0.5077" data-fit-billigst="93"
      onclick="openD('467203986')" onkeydown="if(event.key==='Enter')openD('467203986')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467203986/475ab7c8-07bd-4ced-be51-ef599392e06b" alt="">
@@ -1533,7 +1538,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="466867413" data-rank="34" data-risk="62" data-fit="75"
      data-net="20666" data-price="98800" data-km="144400"
-     data-year="2014" data-front="0" data-search="volkswagen golf vii brumunddal 1.4 tsi (ea211) forhandler navigasjon skinn led/xenon lys alufelger skinnratt dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf vii brumunddal 1.4 tsi (ea211) forhandler navigasjon skinn led/xenon lys alufelger skinnratt dab+" data-util-balansert="0.5068" data-fit-balansert="75" data-util-utenavstand="0.5268" data-fit-utenavstand="85" data-util-lavrisiko="0.4702" data-fit-lavrisiko="75" data-util-billigst="0.5335" data-fit-billigst="85"
      onclick="openD('466867413')" onkeydown="if(event.key==='Enter')openD('466867413')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/466867413/17d45a09-6299-4570-8c50-237c86125033" alt="">
@@ -1574,7 +1579,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="464307802" data-rank="35" data-risk="53" data-fit="85"
      data-net="26151" data-price="124000" data-km="61454"
-     data-year="2013" data-front="0" data-search="volkswagen golf vii  1.4 tsi (ea211) privat navigasjon skinn alufelger skinnratt"
+     data-year="2013" data-front="0" data-search="volkswagen golf vii  1.4 tsi (ea211) privat navigasjon skinn alufelger skinnratt" data-util-balansert="0.4962" data-fit-balansert="85" data-util-utenavstand="0.5082" data-fit-utenavstand="91" data-util-lavrisiko="0.4943" data-fit-lavrisiko="85" data-util-billigst="0.4578" data-fit-billigst="91"
      onclick="openD('464307802')" onkeydown="if(event.key==='Enter')openD('464307802')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/464307802/903c7501-3cd1-4857-95e6-b6574c615979" alt="">
@@ -1615,7 +1620,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="453429697" data-rank="36" data-risk="59" data-fit="83"
      data-net="23900" data-price="115000" data-km="113000"
-     data-year="2016" data-front="0" data-search="volkswagen golf vii  1.2 tsi (ea211) forhandler navigasjon skinn led/xenon lys alufelger parkeringsvarme skinnratt dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf vii  1.2 tsi (ea211) forhandler navigasjon skinn led/xenon lys alufelger parkeringsvarme skinnratt dab+" data-util-balansert="0.4944" data-fit-balansert="83" data-util-utenavstand="0.5064" data-fit-utenavstand="89" data-util-lavrisiko="0.4733" data-fit-lavrisiko="83" data-util-billigst="0.4826" data-fit-billigst="89"
      onclick="openD('453429697')" onkeydown="if(event.key==='Enter')openD('453429697')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/453429697/1b0b1585-bb3c-42dd-8990-0ea513c07e72" alt="">
@@ -1656,7 +1661,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468333661" data-rank="37" data-risk="28" data-fit="84"
      data-net="35451" data-price="137900" data-km="76000"
-     data-year="2017" data-front="1" data-search="volkswagen golf vii  1.0 tsi (ea211, 3-syl) forhandler apple carplay navigasjon skinn adaptiv cruise led/xenon lys alufelger skinnratt dab+"
+     data-year="2017" data-front="1" data-search="volkswagen golf vii  1.0 tsi (ea211, 3-syl) forhandler apple carplay navigasjon skinn adaptiv cruise led/xenon lys alufelger skinnratt dab+" data-util-balansert="0.492" data-fit-balansert="84" data-util-utenavstand="0.506" data-fit-utenavstand="91" data-util-lavrisiko="0.5724" data-fit-lavrisiko="84" data-util-billigst="0.3525" data-fit-billigst="91"
      onclick="openD('468333661')" onkeydown="if(event.key==='Enter')openD('468333661')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468333661/c05771bb-5042-4732-a2c8-e9152064c1f1" alt="">
@@ -1697,7 +1702,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="464996649" data-rank="38" data-risk="50" data-fit="87"
      data-net="28071" data-price="129000" data-km="92000"
-     data-year="2017" data-front="0" data-search="volkswagen golf vii  1.6 tdi (ea288) privat apple carplay android auto navigasjon skinn ryggekamera adaptiv cruise led/xenon lys parkeringsvarme skinnratt dab+"
+     data-year="2017" data-front="0" data-search="volkswagen golf vii  1.6 tdi (ea288) privat apple carplay android auto navigasjon skinn ryggekamera adaptiv cruise led/xenon lys parkeringsvarme skinnratt dab+" data-util-balansert="0.4888" data-fit-balansert="87" data-util-utenavstand="0.5028" data-fit-utenavstand="94" data-util-lavrisiko="0.4995" data-fit-lavrisiko="87" data-util-billigst="0.4321" data-fit-billigst="94"
      onclick="openD('464996649')" onkeydown="if(event.key==='Enter')openD('464996649')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/464996649/3922a2d2-7bfb-4768-b936-aa611ce3f6f7" alt="">
@@ -1738,7 +1743,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467970723" data-rank="39" data-risk="70" data-fit="78"
      data-net="20190" data-price="92000" data-km="111641"
-     data-year="2014" data-front="0" data-search="volkswagen golf plus gardermoen 1.4 tsi (ea211) forhandler navigasjon"
+     data-year="2014" data-front="0" data-search="volkswagen golf plus gardermoen 1.4 tsi (ea211) forhandler navigasjon" data-util-balansert="0.483" data-fit-balansert="78" data-util-utenavstand="0.493" data-fit-utenavstand="83" data-util-lavrisiko="0.4292" data-fit-lavrisiko="78" data-util-billigst="0.5162" data-fit-billigst="83"
      onclick="openD('467970723')" onkeydown="if(event.key==='Enter')openD('467970723')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467970723/9ff401dc-a31f-46f6-8f5b-2ce7421c3a2e" alt="">
@@ -1779,7 +1784,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="466985466" data-rank="40" data-risk="68" data-fit="88"
      data-net="22710" data-price="98000" data-km="103500"
-     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan oslo 1.2 tsi (ea211) forhandler navigasjon skinn adaptiv cruise dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan oslo 1.2 tsi (ea211) forhandler navigasjon skinn adaptiv cruise dab+" data-util-balansert="0.4793" data-fit-balansert="88" data-util-utenavstand="0.4753" data-fit-utenavstand="86" data-util-lavrisiko="0.4351" data-fit-lavrisiko="88" data-util-billigst="0.4754" data-fit-billigst="86"
      onclick="openD('466985466')" onkeydown="if(event.key==='Enter')openD('466985466')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/466985466/c33d1245-7204-41f6-8fc8-ad33e1c6fe28" alt="">
@@ -1820,7 +1825,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="456245189" data-rank="41" data-risk="66" data-fit="79"
      data-net="22080" data-price="89000" data-km="112000"
-     data-year="2013" data-front="0" data-search="volkswagen golf vii skien 1.2 tsi (ea211) forhandler navigasjon led/xenon lys alufelger skinnratt dab+"
+     data-year="2013" data-front="0" data-search="volkswagen golf vii skien 1.2 tsi (ea211) forhandler navigasjon led/xenon lys alufelger skinnratt dab+" data-util-balansert="0.4785" data-fit-balansert="79" data-util-utenavstand="0.5005" data-fit-utenavstand="90" data-util-lavrisiko="0.4394" data-fit-lavrisiko="79" data-util-billigst="0.5002" data-fit-billigst="90"
      onclick="openD('456245189')" onkeydown="if(event.key==='Enter')openD('456245189')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/456245189/0feb95df-1c54-4a6a-9e15-f6b811570ac6" alt="">
@@ -1861,7 +1866,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="465081735" data-rank="42" data-risk="61" data-fit="76"
      data-net="23473" data-price="108900" data-km="90595"
-     data-year="2013" data-front="0" data-search="volkswagen golf vi kristiansand 1.2 tsi (ea211) forhandler adaptiv cruise alufelger parkeringsvarme"
+     data-year="2013" data-front="0" data-search="volkswagen golf vi kristiansand 1.2 tsi (ea211) forhandler adaptiv cruise alufelger parkeringsvarme" data-util-balansert="0.4769" data-fit-balansert="76" data-util-utenavstand="0.5049" data-fit-utenavstand="90" data-util-lavrisiko="0.454" data-fit-lavrisiko="76" data-util-billigst="0.4868" data-fit-billigst="90"
      onclick="openD('465081735')" onkeydown="if(event.key==='Enter')openD('465081735')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/465081735/cafac8d7-1da2-4501-a710-5fc6a1bc78ca" alt="">
@@ -1902,7 +1907,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="465887382" data-rank="43" data-risk="63" data-fit="84"
      data-net="24180" data-price="119000" data-km="107500"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii  1.2 tsi (ea211) forhandler skinn adaptiv cruise led/xenon lys alufelger skinnratt dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii  1.2 tsi (ea211) forhandler skinn adaptiv cruise led/xenon lys alufelger skinnratt dab+" data-util-balansert="0.4748" data-fit-balansert="84" data-util-utenavstand="0.4868" data-fit-utenavstand="90" data-util-lavrisiko="0.4476" data-fit-lavrisiko="84" data-util-billigst="0.4664" data-fit-billigst="90"
      onclick="openD('465887382')" onkeydown="if(event.key==='Enter')openD('465887382')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/465887382/cf8ee3a8-ee59-44e6-b409-cd2775738753" alt="">
@@ -1943,7 +1948,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468231166" data-rank="44" data-risk="75" data-fit="76"
      data-net="19177" data-price="77532" data-km="141000"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii mjøndalen 1.4 tsi (ea211) privat skinn adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii mjøndalen 1.4 tsi (ea211) privat skinn adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt dab+" data-util-balansert="0.4696" data-fit-balansert="76" data-util-utenavstand="0.4796" data-fit-utenavstand="81" data-util-lavrisiko="0.4038" data-fit-lavrisiko="76" data-util-billigst="0.5188" data-fit-billigst="81"
      onclick="openD('468231166')" onkeydown="if(event.key==='Enter')openD('468231166')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468231166/ce1faf7d-d13f-4ed3-9be2-a14dec392b51" alt="">
@@ -1984,7 +1989,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="459786425" data-rank="45" data-risk="55" data-fit="86"
      data-net="27800" data-price="128729" data-km="124695"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii asker 1.6 tdi (ea288) forhandler skinnratt"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii asker 1.6 tdi (ea288) forhandler skinnratt" data-util-balansert="0.4678" data-fit-balansert="86" data-util-utenavstand="0.4698" data-fit-utenavstand="87" data-util-lavrisiko="0.4693" data-fit-lavrisiko="86" data-util-billigst="0.4122" data-fit-billigst="87"
      onclick="openD('459786425')" onkeydown="if(event.key==='Enter')openD('459786425')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/459786425/1020260c-1978-4e83-ac25-4acb50921646" alt="">
@@ -2025,7 +2030,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="461400069" data-rank="46" data-risk="34" data-fit="85"
      data-net="65286" data-price="169000" data-km="112000"
-     data-year="2014" data-front="0" data-search="volkswagen golf vii  2.0 tdi (ea288) forhandler skinn adaptiv cruise alufelger parkeringsvarme skinnratt dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf vii  2.0 tdi (ea288) forhandler skinn adaptiv cruise alufelger parkeringsvarme skinnratt dab+" data-util-balansert="0.467" data-fit-balansert="85" data-util-utenavstand="0.479" data-fit-utenavstand="91" data-util-lavrisiko="0.5367" data-fit-lavrisiko="85" data-util-billigst="0.3345" data-fit-billigst="91"
      onclick="openD('461400069')" onkeydown="if(event.key==='Enter')openD('461400069')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/461400069/61cf4965-eefd-44b8-b2c9-412516a497b9" alt="">
@@ -2066,7 +2071,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467739384" data-rank="47" data-risk="67" data-fit="82"
      data-net="23686" data-price="111942" data-km="103500"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii  1.2 tsi (ea211) privat navigasjon skinn alufelger skinnratt dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii  1.2 tsi (ea211) privat navigasjon skinn alufelger skinnratt dab+" data-util-balansert="0.4592" data-fit-balansert="82" data-util-utenavstand="0.4712" data-fit-utenavstand="88" data-util-lavrisiko="0.424" data-fit-lavrisiko="82" data-util-billigst="0.4615" data-fit-billigst="88"
      onclick="openD('467739384')" onkeydown="if(event.key==='Enter')openD('467739384')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467739384/062da4b9-ac9a-4833-9359-110b6554bb51" alt="">
@@ -2107,7 +2112,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="465341189" data-rank="48" data-risk="72" data-fit="82"
      data-net="22143" data-price="119900" data-km="135000"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii moss 1.4 tsi (ea211) forhandler alufelger"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii moss 1.4 tsi (ea211) forhandler alufelger" data-util-balansert="0.4567" data-fit-balansert="82" data-util-utenavstand="0.4687" data-fit-utenavstand="88" data-util-lavrisiko="0.4061" data-fit-lavrisiko="82" data-util-billigst="0.4779" data-fit-billigst="88"
      onclick="openD('465341189')" onkeydown="if(event.key==='Enter')openD('465341189')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/465341189/ea1f58b0-4667-4900-812b-7d5e628fbffa" alt="">
@@ -2148,7 +2153,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467383007" data-rank="49" data-risk="36" data-fit="84"
      data-net="64613" data-price="169532" data-km="84758"
-     data-year="2016" data-front="0" data-search="volkswagen golf alltrack  1.8/2.0 tsi (ea888) privat skinn ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme panorama/soltak skinnratt dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf alltrack  1.8/2.0 tsi (ea888) privat skinn ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme panorama/soltak skinnratt dab+" data-util-balansert="0.456" data-fit-balansert="84" data-util-utenavstand="0.468" data-fit-utenavstand="90" data-util-lavrisiko="0.5228" data-fit-lavrisiko="84" data-util-billigst="0.327" data-fit-billigst="90"
      onclick="openD('467383007')" onkeydown="if(event.key==='Enter')openD('467383007')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467383007/3dbf50a4-d18b-46ef-a06b-9a296cb6772c" alt="">
@@ -2189,7 +2194,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468337319" data-rank="50" data-risk="72" data-fit="78"
      data-net="21677" data-price="83236" data-km="139700"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii dal 1.2 tsi (ea211) privat "
+     data-year="2015" data-front="0" data-search="volkswagen golf vii dal 1.2 tsi (ea211) privat " data-util-balansert="0.4547" data-fit-balansert="78" data-util-utenavstand="0.4667" data-fit-utenavstand="84" data-util-lavrisiko="0.4041" data-fit-lavrisiko="78" data-util-billigst="0.4814" data-fit-billigst="84"
      onclick="openD('468337319')" onkeydown="if(event.key==='Enter')openD('468337319')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468337319/5291e08c-263d-4a3d-ad63-d6b8acbc50cd" alt="">
@@ -2230,7 +2235,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="425633813" data-rank="51" data-risk="57" data-fit="79"
      data-net="27051" data-price="124900" data-km="85127"
-     data-year="2017" data-front="0" data-search="volkswagen golf sportsvan  1.4 tsi (ea211) forhandler apple carplay android auto ryggekamera adaptiv cruise alufelger dab+"
+     data-year="2017" data-front="0" data-search="volkswagen golf sportsvan  1.4 tsi (ea211) forhandler apple carplay android auto ryggekamera adaptiv cruise alufelger dab+" data-util-balansert="0.4545" data-fit-balansert="79" data-util-utenavstand="0.4645" data-fit-utenavstand="84" data-util-lavrisiko="0.4528" data-fit-lavrisiko="79" data-util-billigst="0.4169" data-fit-billigst="84"
      onclick="openD('425633813')" onkeydown="if(event.key==='Enter')openD('425633813')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/425633813/6d067f82-2dda-4d0c-ab6d-ab86d4b7deb1" alt="">
@@ -2271,7 +2276,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="416775556" data-rank="52" data-risk="42" data-fit="65"
      data-net="30286" data-price="134000" data-km="138000"
-     data-year="2016" data-front="0" data-search="volkswagen golf vii skien 2.0 tdi (ea288) forhandler navigasjon skinn ryggekamera adaptiv cruise led/xenon lys parkeringsvarme dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf vii skien 2.0 tdi (ea288) forhandler navigasjon skinn ryggekamera adaptiv cruise led/xenon lys parkeringsvarme dab+" data-util-balansert="0.4521" data-fit-balansert="65" data-util-utenavstand="0.4701" data-fit-utenavstand="74" data-util-lavrisiko="0.4973" data-fit-lavrisiko="65" data-util-billigst="0.381" data-fit-billigst="74"
      onclick="openD('416775556')" onkeydown="if(event.key==='Enter')openD('416775556')">
     <div class="card-img">
       <div class="noimg">ingen bilder</div>
@@ -2312,7 +2317,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467347014" data-rank="53" data-risk="73" data-fit="77"
      data-net="21380" data-price="79000" data-km="149900"
-     data-year="2013" data-front="0" data-search="volkswagen golf vii mjøndalen 1.2 tsi (ea211) forhandler navigasjon skinnratt dab+"
+     data-year="2013" data-front="0" data-search="volkswagen golf vii mjøndalen 1.2 tsi (ea211) forhandler navigasjon skinnratt dab+" data-util-balansert="0.4521" data-fit-balansert="77" data-util-utenavstand="0.4641" data-fit-utenavstand="83" data-util-lavrisiko="0.3989" data-fit-lavrisiko="77" data-util-billigst="0.4829" data-fit-billigst="83"
      onclick="openD('467347014')" onkeydown="if(event.key==='Enter')openD('467347014')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467347014/4853f8ed-fbd1-4df0-8d04-d700b8a10101" alt="">
@@ -2353,7 +2358,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468119424" data-rank="54" data-risk="35" data-fit="79"
      data-net="47351" data-price="149800" data-km="80300"
-     data-year="2017" data-front="0" data-search="volkswagen golf vii sandnes 1.0 tsi (ea211, 3-syl) forhandler skinn led/xenon lys alufelger dab+"
+     data-year="2017" data-front="0" data-search="volkswagen golf vii sandnes 1.0 tsi (ea211, 3-syl) forhandler skinn led/xenon lys alufelger dab+" data-util-balansert="0.4505" data-fit-balansert="79" data-util-utenavstand="0.4805" data-fit-utenavstand="94" data-util-lavrisiko="0.5215" data-fit-lavrisiko="79" data-util-billigst="0.336" data-fit-billigst="94"
      onclick="openD('468119424')" onkeydown="if(event.key==='Enter')openD('468119424')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468119424/4d27aef2-37fb-4f58-9e39-e6308d0052ff" alt="">
@@ -2394,7 +2399,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="456055883" data-rank="55" data-risk="41" data-fit="92"
      data-net="96276" data-price="199990" data-km="113000"
-     data-year="2017" data-front="0" data-search="volkswagen golf vii oslo 2.0 tdi (ea288) forhandler navigasjon ryggekamera panorama/soltak dab+"
+     data-year="2017" data-front="0" data-search="volkswagen golf vii oslo 2.0 tdi (ea288) forhandler navigasjon ryggekamera panorama/soltak dab+" data-util-balansert="0.4495" data-fit-balansert="92" data-util-utenavstand="0.4475" data-fit-utenavstand="91" data-util-lavrisiko="0.5038" data-fit-lavrisiko="92" data-util-billigst="0.3135" data-fit-billigst="91"
      onclick="openD('456055883')" onkeydown="if(event.key==='Enter')openD('456055883')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/456055883/f91f1f19-6559-4f6d-90b6-145e6e274113" alt="">
@@ -2435,7 +2440,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="466766884" data-rank="56" data-risk="67" data-fit="76"
      data-net="23542" data-price="109880" data-km="102000"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii stavanger 1.2 tsi (ea211) forhandler skinn ryggekamera led/xenon lys alufelger skinnratt dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii stavanger 1.2 tsi (ea211) forhandler skinn ryggekamera led/xenon lys alufelger skinnratt dab+" data-util-balansert="0.449" data-fit-balansert="76" data-util-utenavstand="0.477" data-fit-utenavstand="90" data-util-lavrisiko="0.4162" data-fit-lavrisiko="76" data-util-billigst="0.4674" data-fit-billigst="90"
      onclick="openD('466766884')" onkeydown="if(event.key==='Enter')openD('466766884')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/466766884/bb66e7b3-4371-4e46-87f7-f1957e129c00" alt="">
@@ -2476,7 +2481,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468061086" data-rank="57" data-risk="75" data-fit="80"
      data-net="21443" data-price="109900" data-km="131000"
-     data-year="2013" data-front="0" data-search="volkswagen golf vii moss 1.4 tsi (ea211) forhandler adaptiv cruise led/xenon lys alufelger skinnratt dab+"
+     data-year="2013" data-front="0" data-search="volkswagen golf vii moss 1.4 tsi (ea211) forhandler adaptiv cruise led/xenon lys alufelger skinnratt dab+" data-util-balansert="0.4482" data-fit-balansert="80" data-util-utenavstand="0.4602" data-fit-utenavstand="86" data-util-lavrisiko="0.3905" data-fit-lavrisiko="80" data-util-billigst="0.4802" data-fit-billigst="86"
      onclick="openD('468061086')" onkeydown="if(event.key==='Enter')openD('468061086')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468061086/fb6c36e7-6d96-461b-acbd-775208945e9f" alt="">
@@ -2517,7 +2522,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="456692567" data-rank="58" data-risk="70" data-fit="81"
      data-net="23480" data-price="109000" data-km="125000"
-     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan moss 1.2 tsi (ea211) forhandler alufelger"
+     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan moss 1.2 tsi (ea211) forhandler alufelger" data-util-balansert="0.4463" data-fit-balansert="81" data-util-utenavstand="0.4583" data-fit-utenavstand="87" data-util-lavrisiko="0.4056" data-fit-lavrisiko="81" data-util-billigst="0.4552" data-fit-billigst="87"
      onclick="openD('456692567')" onkeydown="if(event.key==='Enter')openD('456692567')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/456692567/e271ceab-30e2-4481-af19-b7d8a9c6572c" alt="">
@@ -2558,7 +2563,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467628506" data-rank="59" data-risk="78" data-fit="81"
      data-net="20743" data-price="69900" data-km="130000"
-     data-year="2014" data-front="0" data-search="volkswagen golf vii oslo 1.2 tsi (ea211) forhandler navigasjon skinn alufelger skinnratt dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf vii oslo 1.2 tsi (ea211) forhandler navigasjon skinn alufelger skinnratt dab+" data-util-balansert="0.4458" data-fit-balansert="81" data-util-utenavstand="0.4398" data-fit-utenavstand="78" data-util-lavrisiko="0.3793" data-fit-lavrisiko="81" data-util-billigst="0.4734" data-fit-billigst="78"
      onclick="openD('467628506')" onkeydown="if(event.key==='Enter')openD('467628506')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467628506/ae42b3c6-90c2-4071-82cf-bd408d6983f8" alt="">
@@ -2599,7 +2604,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="444662011" data-rank="60" data-risk="81" data-fit="71"
      data-net="18786" data-price="71942" data-km="143850"
-     data-year="2013" data-front="0" data-search="volkswagen golf plus  1.4 tsi (ea211) forhandler parkeringsvarme dab+"
+     data-year="2013" data-front="0" data-search="volkswagen golf plus  1.4 tsi (ea211) forhandler parkeringsvarme dab+" data-util-balansert="0.4377" data-fit-balansert="71" data-util-utenavstand="0.4457" data-fit-utenavstand="75" data-util-lavrisiko="0.3624" data-fit-lavrisiko="71" data-util-billigst="0.4998" data-fit-billigst="75"
      onclick="openD('444662011')" onkeydown="if(event.key==='Enter')openD('444662011')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/444662011/f1bf0813-dac6-49b9-958b-e96a3afbcb1c" alt="">
@@ -2640,7 +2645,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="452196177" data-rank="61" data-risk="70" data-fit="80"
      data-net="24007" data-price="116532" data-km="136500"
-     data-year="2016" data-front="0" data-search="volkswagen golf sportsvan mysen 1.2 tsi (ea211) forhandler ryggekamera adaptiv cruise alufelger skinnratt dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf sportsvan mysen 1.2 tsi (ea211) forhandler ryggekamera adaptiv cruise alufelger skinnratt dab+" data-util-balansert="0.4375" data-fit-balansert="80" data-util-utenavstand="0.4495" data-fit-utenavstand="86" data-util-lavrisiko="0.3996" data-fit-lavrisiko="80" data-util-billigst="0.4429" data-fit-billigst="86"
      onclick="openD('452196177')" onkeydown="if(event.key==='Enter')openD('452196177')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/452196177/fcf3d61f-3617-481a-8d08-bde6334984ed" alt="">
@@ -2681,7 +2686,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="459769805" data-rank="62" data-risk="37" data-fit="77"
      data-net="87451" data-price="189900" data-km="100975"
-     data-year="2017" data-front="0" data-search="volkswagen golf vii kristiansand 1.0 tsi (ea211, 3-syl) forhandler navigasjon adaptiv cruise alufelger skinnratt dab+"
+     data-year="2017" data-front="0" data-search="volkswagen golf vii kristiansand 1.0 tsi (ea211, 3-syl) forhandler navigasjon adaptiv cruise alufelger skinnratt dab+" data-util-balansert="0.4375" data-fit-balansert="77" data-util-utenavstand="0.4675" data-fit-utenavstand="92" data-util-lavrisiko="0.5061" data-fit-lavrisiko="77" data-util-billigst="0.327" data-fit-billigst="92"
      onclick="openD('459769805')" onkeydown="if(event.key==='Enter')openD('459769805')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/459769805/d10c5a0b-a528-49eb-9a3f-a802f7b32573" alt="">
@@ -2722,7 +2727,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="465836040" data-rank="63" data-risk="62" data-fit="74"
      data-net="26151" data-price="124000" data-km="106000"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii bergen 1.4 tsi (ea211) forhandler skinn led/xenon lys"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii bergen 1.4 tsi (ea211) forhandler skinn led/xenon lys" data-util-balansert="0.4337" data-fit-balansert="74" data-util-utenavstand="0.4617" data-fit-utenavstand="88" data-util-lavrisiko="0.422" data-fit-lavrisiko="74" data-util-billigst="0.4263" data-fit-billigst="88"
      onclick="openD('465836040')" onkeydown="if(event.key==='Enter')openD('465836040')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/465836040/55b62255-f200-47e2-aaf5-6d0f3fbf9159" alt="">
@@ -2763,7 +2768,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467147498" data-rank="64" data-risk="68" data-fit="73"
      data-net="24180" data-price="119000" data-km="116000"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii bergen 1.2 tsi (ea211) forhandler skinn alufelger parkeringsvarme dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii bergen 1.2 tsi (ea211) forhandler skinn alufelger parkeringsvarme dab+" data-util-balansert="0.4303" data-fit-balansert="73" data-util-utenavstand="0.4583" data-fit-utenavstand="87" data-util-lavrisiko="0.4001" data-fit-lavrisiko="73" data-util-billigst="0.4469" data-fit-billigst="87"
      onclick="openD('467147498')" onkeydown="if(event.key==='Enter')openD('467147498')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467147498/478ecc6b-c165-45fd-8019-56c193786db5" alt="">
@@ -2804,7 +2809,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="419819435" data-rank="65" data-risk="77" data-fit="70"
      data-net="20680" data-price="99000" data-km="138000"
-     data-year="2013" data-front="0" data-search="volkswagen golf plus  1.4 tsi (ea211) forhandler navigasjon skinn alufelger"
+     data-year="2013" data-front="0" data-search="volkswagen golf plus  1.4 tsi (ea211) forhandler navigasjon skinn alufelger" data-util-balansert="0.4291" data-fit-balansert="70" data-util-utenavstand="0.4371" data-fit-utenavstand="74" data-util-lavrisiko="0.3696" data-fit-lavrisiko="70" data-util-billigst="0.4717" data-fit-billigst="74"
      onclick="openD('419819435')" onkeydown="if(event.key==='Enter')openD('419819435')">
     <div class="card-img">
       <div class="noimg">ingen bilder</div>
@@ -2845,7 +2850,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468462678" data-rank="66" data-risk="66" data-fit="64"
      data-net="24093" data-price="121942" data-km="75500"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii  1.4 tsi (ea211) privat navigasjon skinn adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii  1.4 tsi (ea211) privat navigasjon skinn adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt dab+" data-util-balansert="0.4224" data-fit-balansert="64" data-util-utenavstand="0.4264" data-fit-utenavstand="66" data-util-lavrisiko="0.3997" data-fit-lavrisiko="64" data-util-billigst="0.4232" data-fit-billigst="66"
      onclick="openD('468462678')" onkeydown="if(event.key==='Enter')openD('468462678')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468462678/2d7224bb-6e86-42c0-bab0-80f9b9397a79" alt="">
@@ -2886,7 +2891,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467285134" data-rank="67" data-risk="40" data-fit="76"
      data-net="94981" data-price="199900" data-km="102930"
-     data-year="2016" data-front="0" data-search="volkswagen golf alltrack kristiansand 1.8/2.0 tsi (ea888) forhandler navigasjon skinn ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme premium lyd skinnratt dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf alltrack kristiansand 1.8/2.0 tsi (ea888) forhandler navigasjon skinn ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme premium lyd skinnratt dab+" data-util-balansert="0.422" data-fit-balansert="76" data-util-utenavstand="0.45" data-fit-utenavstand="90" data-util-lavrisiko="0.486" data-fit-lavrisiko="76" data-util-billigst="0.315" data-fit-billigst="90"
      onclick="openD('467285134')" onkeydown="if(event.key==='Enter')openD('467285134')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467285134/792ce493-31c5-4b1d-81ed-cc0305bff39e" alt="">
@@ -2927,7 +2932,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="462794204" data-rank="68" data-risk="45" data-fit="87"
      data-net="41318" data-price="145032" data-km="119800"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii nittedal 2.0 tdi (ea288) privat alufelger parkeringsvarme skinnratt dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii nittedal 2.0 tdi (ea288) privat alufelger parkeringsvarme skinnratt dab+" data-util-balansert="0.4215" data-fit-balansert="87" data-util-utenavstand="0.4255" data-fit-utenavstand="89" data-util-lavrisiko="0.4715" data-fit-lavrisiko="87" data-util-billigst="0.2985" data-fit-billigst="89"
      onclick="openD('462794204')" onkeydown="if(event.key==='Enter')openD('462794204')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/462794204/3be7bd9d-28f4-48cb-87f0-ae5c1042c69d" alt="">
@@ -2968,7 +2973,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="466535409" data-rank="69" data-risk="41" data-fit="78"
      data-net="74081" data-price="179000" data-km="115000"
-     data-year="2016" data-front="0" data-search="volkswagen golf alltrack porsgrunn 1.8/2.0 tsi (ea888) privat apple carplay navigasjon skinn ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf alltrack porsgrunn 1.8/2.0 tsi (ea888) privat apple carplay navigasjon skinn ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt dab+" data-util-balansert="0.4215" data-fit-balansert="78" data-util-utenavstand="0.4435" data-fit-utenavstand="89" data-util-lavrisiko="0.4828" data-fit-lavrisiko="78" data-util-billigst="0.3105" data-fit-billigst="89"
      onclick="openD('466535409')" onkeydown="if(event.key==='Enter')openD('466535409')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/466535409/ead87377-a253-4042-b1d6-91feea5dd518" alt="">
@@ -3009,7 +3014,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468046722" data-rank="70" data-risk="42" data-fit="80"
      data-net="74981" data-price="179900" data-km="137867"
-     data-year="2016" data-front="0" data-search="volkswagen golf alltrack drammen 1.8/2.0 tsi (ea888) forhandler apple carplay android auto navigasjon skinn ryggekamera adaptiv cruise led/xenon lys dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf alltrack drammen 1.8/2.0 tsi (ea888) forhandler apple carplay android auto navigasjon skinn ryggekamera adaptiv cruise led/xenon lys dab+" data-util-balansert="0.421" data-fit-balansert="80" data-util-utenavstand="0.431" data-fit-utenavstand="85" data-util-lavrisiko="0.4796" data-fit-lavrisiko="80" data-util-billigst="0.3015" data-fit-billigst="85"
      onclick="openD('468046722')" onkeydown="if(event.key==='Enter')openD('468046722')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468046722/d35e4591-cd3b-4111-b5e4-1f0474fc6174" alt="">
@@ -3050,7 +3055,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="456176386" data-rank="71" data-risk="48" data-fit="91"
      data-net="84081" data-price="189000" data-km="113000"
-     data-year="2016" data-front="0" data-search="volkswagen golf alltrack oslo 1.8/2.0 tsi (ea888) privat apple carplay navigasjon skinn ryggekamera adaptiv cruise alufelger parkeringsvarme panorama/soltak skinnratt dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf alltrack oslo 1.8/2.0 tsi (ea888) privat apple carplay navigasjon skinn ryggekamera adaptiv cruise alufelger parkeringsvarme panorama/soltak skinnratt dab+" data-util-balansert="0.416" data-fit-balansert="91" data-util-utenavstand="0.412" data-fit-utenavstand="89" data-util-lavrisiko="0.4589" data-fit-lavrisiko="91" data-util-billigst="0.2895" data-fit-billigst="89"
      onclick="openD('456176386')" onkeydown="if(event.key==='Enter')openD('456176386')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/456176386/fd021da8-9ad1-4703-af99-37b0c96e8579" alt="">
@@ -3091,7 +3096,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467887572" data-rank="72" data-risk="47" data-fit="87"
      data-net="56276" data-price="159990" data-km="142650"
-     data-year="2017" data-front="0" data-search="volkswagen golf alltrack oslo 2.0 tdi (ea288) forhandler navigasjon skinn adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt"
+     data-year="2017" data-front="0" data-search="volkswagen golf alltrack oslo 2.0 tdi (ea288) forhandler navigasjon skinn adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt" data-util-balansert="0.4125" data-fit-balansert="87" data-util-utenavstand="0.4085" data-fit-utenavstand="85" data-util-lavrisiko="0.4591" data-fit-lavrisiko="87" data-util-billigst="0.2865" data-fit-billigst="85"
      onclick="openD('467887572')" onkeydown="if(event.key==='Enter')openD('467887572')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467887572/fb377428-217e-481b-b8f8-c41593a40664" alt="">
@@ -3132,7 +3137,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="462729576" data-rank="73" data-risk="74" data-fit="77"
      data-net="24180" data-price="119000" data-km="133000"
-     data-year="2017" data-front="0" data-search="volkswagen golf sportsvan moelv 1.2 tsi (ea211) forhandler alufelger skinnratt dab+"
+     data-year="2017" data-front="0" data-search="volkswagen golf sportsvan moelv 1.2 tsi (ea211) forhandler alufelger skinnratt dab+" data-util-balansert="0.4113" data-fit-balansert="77" data-util-utenavstand="0.4313" data-fit-utenavstand="87" data-util-lavrisiko="0.3689" data-fit-lavrisiko="77" data-util-billigst="0.4289" data-fit-billigst="87"
      onclick="openD('462729576')" onkeydown="if(event.key==='Enter')openD('462729576')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/462729576/b3b49611-e172-4565-bc77-bc62500c0972" alt="">
@@ -3173,7 +3178,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="437019982" data-rank="74" data-risk="46" data-fit="84"
      data-net="38946" data-price="139875" data-km="108000"
-     data-year="2014" data-front="0" data-search="volkswagen golf sportsvan drammen 1.6 tdi (ea288) forhandler navigasjon ryggekamera adaptiv cruise alufelger skinnratt dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf sportsvan drammen 1.6 tdi (ea288) forhandler navigasjon ryggekamera adaptiv cruise alufelger skinnratt dab+" data-util-balansert="0.411" data-fit-balansert="84" data-util-utenavstand="0.423" data-fit-utenavstand="90" data-util-lavrisiko="0.4608" data-fit-lavrisiko="84" data-util-billigst="0.297" data-fit-billigst="90"
      onclick="openD('437019982')" onkeydown="if(event.key==='Enter')openD('437019982')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/437019982/7a810533-2d05-46b6-a782-3657c01e9b55" alt="">
@@ -3214,7 +3219,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="461167936" data-rank="75" data-risk="47" data-fit="86"
      data-net="68971" data-price="169900" data-km="90000"
-     data-year="2017" data-front="0" data-search="volkswagen golf vii  1.6 tdi (ea288) forhandler apple carplay android auto navigasjon ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt dab+"
+     data-year="2017" data-front="0" data-search="volkswagen golf vii  1.6 tdi (ea288) forhandler apple carplay android auto navigasjon ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt dab+" data-util-balansert="0.4105" data-fit-balansert="86" data-util-utenavstand="0.4245" data-fit-utenavstand="93" data-util-lavrisiko="0.4576" data-fit-lavrisiko="86" data-util-billigst="0.2985" data-fit-billigst="93"
      onclick="openD('461167936')" onkeydown="if(event.key==='Enter')openD('461167936')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/461167936/5f08e055-3aae-4617-af82-078e5239ca14" alt="">
@@ -3255,7 +3260,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468523721" data-rank="76" data-risk="43" data-fit="77"
      data-net="75286" data-price="179000" data-km="139000"
-     data-year="2017" data-front="0" data-search="volkswagen golf alltrack skien 2.0 tdi (ea288) forhandler navigasjon skinn ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt dab+"
+     data-year="2017" data-front="0" data-search="volkswagen golf alltrack skien 2.0 tdi (ea288) forhandler navigasjon skinn ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt dab+" data-util-balansert="0.4105" data-fit-balansert="77" data-util-utenavstand="0.4325" data-fit-utenavstand="88" data-util-lavrisiko="0.4689" data-fit-lavrisiko="77" data-util-billigst="0.303" data-fit-billigst="88"
      onclick="openD('468523721')" onkeydown="if(event.key==='Enter')openD('468523721')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468523721/03e8b4a1-9af9-4fb0-9ae4-3f63424bcfe7" alt="">
@@ -3296,7 +3301,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468047107" data-rank="77" data-risk="77" data-fit="70"
      data-net="22150" data-price="119999" data-km="130000"
-     data-year="2016" data-front="0" data-search="volkswagen golf sportsvan vennesla 1.4 tsi (ea211) forhandler navigasjon skinn ryggekamera adaptiv cruise alufelger parkeringsvarme dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf sportsvan vennesla 1.4 tsi (ea211) forhandler navigasjon skinn ryggekamera adaptiv cruise alufelger parkeringsvarme dab+" data-util-balansert="0.4101" data-fit-balansert="70" data-util-utenavstand="0.4381" data-fit-utenavstand="84" data-util-lavrisiko="0.3571" data-fit-lavrisiko="70" data-util-billigst="0.4568" data-fit-billigst="84"
      onclick="openD('468047107')" onkeydown="if(event.key==='Enter')openD('468047107')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468047107/b3b0ab88-c79c-4a83-9e1c-c40a0436c891" alt="">
@@ -3337,7 +3342,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467686804" data-rank="78" data-risk="78" data-fit="67"
      data-net="21446" data-price="109942" data-km="141000"
-     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan  1.4 tsi (ea211) privat navigasjon skinn ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme panorama/soltak skinnratt dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan  1.4 tsi (ea211) privat navigasjon skinn ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme panorama/soltak skinnratt dab+" data-util-balansert="0.4087" data-fit-balansert="67" data-util-utenavstand="0.4147" data-fit-utenavstand="70" data-util-lavrisiko="0.3524" data-fit-lavrisiko="67" data-util-billigst="0.4471" data-fit-billigst="70"
      onclick="openD('467686804')" onkeydown="if(event.key==='Enter')openD('467686804')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467686804/8cda000e-9118-4f2d-bef0-15a74c7b76b3" alt="">
@@ -3378,7 +3383,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="453406966" data-rank="79" data-risk="78" data-fit="76"
      data-net="22986" data-price="101942" data-km="150000"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii  1.2 tsi (ea211) privat skinn adaptiv cruise"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii  1.2 tsi (ea211) privat skinn adaptiv cruise" data-util-balansert="0.4067" data-fit-balansert="76" data-util-utenavstand="0.4167" data-fit-utenavstand="81" data-util-lavrisiko="0.3527" data-fit-lavrisiko="76" data-util-billigst="0.4322" data-fit-billigst="81"
      onclick="openD('453406966')" onkeydown="if(event.key==='Enter')openD('453406966')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/453406966/7ef7c44b-ba60-4e63-8306-b0020bcde1d2" alt="">
@@ -3419,7 +3424,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="457205371" data-rank="80" data-risk="52" data-fit="95"
      data-net="51151" data-price="149000" data-km="62546"
-     data-year="2014" data-front="0" data-search="volkswagen golf vii oslo 1.4 tsi (ea211) forhandler navigasjon led/xenon lys alufelger skinnratt"
+     data-year="2014" data-front="0" data-search="volkswagen golf vii oslo 1.4 tsi (ea211) forhandler navigasjon led/xenon lys alufelger skinnratt" data-util-balansert="0.406" data-fit-balansert="95" data-util-utenavstand="0.404" data-fit-utenavstand="94" data-util-lavrisiko="0.4401" data-fit-lavrisiko="95" data-util-billigst="0.285" data-fit-billigst="94"
      onclick="openD('457205371')" onkeydown="if(event.key==='Enter')openD('457205371')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/457205371/df26f57b-547d-4db8-901a-7f291c337990" alt="">
@@ -3460,7 +3465,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468084284" data-rank="81" data-risk="80" data-fit="78"
      data-net="22780" data-price="99000" data-km="131954"
-     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan  1.2 tsi (ea211) privat ryggekamera alufelger dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan  1.2 tsi (ea211) privat ryggekamera alufelger dab+" data-util-balansert="0.4044" data-fit-balansert="78" data-util-utenavstand="0.4144" data-fit-utenavstand="83" data-util-lavrisiko="0.3451" data-fit-lavrisiko="78" data-util-billigst="0.4334" data-fit-billigst="83"
      onclick="openD('468084284')" onkeydown="if(event.key==='Enter')openD('468084284')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468084284/bde9dc3a-7004-4baf-bb48-3a92c6955cc9" alt="">
@@ -3501,7 +3506,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="464245259" data-rank="82" data-risk="49" data-fit="87"
      data-net="52051" data-price="149900" data-km="80556"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii hønefoss 1.4 tsi (ea211) forhandler navigasjon skinn adaptiv cruise led/xenon lys alufelger panorama/soltak skinnratt dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii hønefoss 1.4 tsi (ea211) forhandler navigasjon skinn adaptiv cruise led/xenon lys alufelger panorama/soltak skinnratt dab+" data-util-balansert="0.4035" data-fit-balansert="87" data-util-utenavstand="0.4175" data-fit-utenavstand="94" data-util-lavrisiko="0.4467" data-fit-lavrisiko="87" data-util-billigst="0.294" data-fit-billigst="94"
      onclick="openD('464245259')" onkeydown="if(event.key==='Enter')openD('464245259')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/464245259/ad0dc733-60a7-428c-9441-470d91bd7867" alt="">
@@ -3542,7 +3547,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="460233989" data-rank="83" data-risk="54" data-fit="77"
      data-net="32041" data-price="129890" data-km="124300"
-     data-year="2016" data-front="0" data-search="volkswagen golf vii fredrikstad 1.4 tsi (ea211) forhandler led/xenon lys skinnratt dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf vii fredrikstad 1.4 tsi (ea211) forhandler led/xenon lys skinnratt dab+" data-util-balansert="0.3994" data-fit-balansert="77" data-util-utenavstand="0.4214" data-fit-utenavstand="88" data-util-lavrisiko="0.4259" data-fit-lavrisiko="77" data-util-billigst="0.3303" data-fit-billigst="88"
      onclick="openD('460233989')" onkeydown="if(event.key==='Enter')openD('460233989')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/460233989/c4763522-0811-4e8e-a925-66b7243741f5" alt="">
@@ -3583,7 +3588,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="466685309" data-rank="84" data-risk="68" data-fit="94"
      data-net="30151" data-price="128000" data-km="95000"
-     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan strømmen 1.4 tsi (ea211) forhandler "
+     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan strømmen 1.4 tsi (ea211) forhandler " data-util-balansert="0.3949" data-fit-balansert="94" data-util-utenavstand="0.3929" data-fit-utenavstand="93" data-util-lavrisiko="0.3807" data-fit-lavrisiko="94" data-util-billigst="0.3343" data-fit-billigst="93"
      onclick="openD('466685309')" onkeydown="if(event.key==='Enter')openD('466685309')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/466685309/105cc35f-3f3b-44d0-a626-d0e55836f782" alt="">
@@ -3624,7 +3629,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="462528455" data-rank="85" data-risk="80" data-fit="73"
      data-net="22843" data-price="99900" data-km="146800"
-     data-year="2014" data-front="0" data-search="volkswagen golf sportsvan fredrikstad 1.2 tsi (ea211) forhandler led/xenon lys alufelger dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf sportsvan fredrikstad 1.2 tsi (ea211) forhandler led/xenon lys alufelger dab+" data-util-balansert="0.3936" data-fit-balansert="73" data-util-utenavstand="0.4136" data-fit-utenavstand="83" data-util-lavrisiko="0.3371" data-fit-lavrisiko="73" data-util-billigst="0.4321" data-fit-billigst="83"
      onclick="openD('462528455')" onkeydown="if(event.key==='Enter')openD('462528455')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/462528455/411d0235-a3f9-425b-819e-e92cbac69fab" alt="">
@@ -3665,7 +3670,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467117407" data-rank="86" data-risk="52" data-fit="88"
      data-net="64151" data-price="159900" data-km="27000"
-     data-year="2017" data-front="0" data-search="volkswagen golf sportsvan ski 1.2 tsi (ea211) forhandler adaptiv cruise alufelger skinnratt dab+"
+     data-year="2017" data-front="0" data-search="volkswagen golf sportsvan ski 1.2 tsi (ea211) forhandler adaptiv cruise alufelger skinnratt dab+" data-util-balansert="0.392" data-fit-balansert="88" data-util-utenavstand="0.394" data-fit-utenavstand="89" data-util-lavrisiko="0.4296" data-fit-lavrisiko="88" data-util-billigst="0.2775" data-fit-billigst="89"
      onclick="openD('467117407')" onkeydown="if(event.key==='Enter')openD('467117407')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467117407/17bc9cd8-9646-4858-8a93-a610c370766e" alt="">
@@ -3706,7 +3711,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="465401769" data-rank="87" data-risk="54" data-fit="80"
      data-net="33093" data-price="130942" data-km="99200"
-     data-year="2013" data-front="0" data-search="volkswagen golf vii larvik 1.4 tsi (ea211) privat skinnratt"
+     data-year="2013" data-front="0" data-search="volkswagen golf vii larvik 1.4 tsi (ea211) privat skinnratt" data-util-balansert="0.3917" data-fit-balansert="80" data-util-utenavstand="0.4137" data-fit-utenavstand="91" data-util-lavrisiko="0.4214" data-fit-lavrisiko="80" data-util-billigst="0.3133" data-fit-billigst="91"
      onclick="openD('465401769')" onkeydown="if(event.key==='Enter')openD('465401769')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/465401769/a7043f27-f67a-4faf-9331-2bcc5ce3ebb8" alt="">
@@ -3747,7 +3752,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468504817" data-rank="88" data-risk="51" data-fit="83"
      data-net="45286" data-price="149000" data-km="121000"
-     data-year="2016" data-front="0" data-search="volkswagen golf sportsvan  2.0 tdi (ea288) forhandler navigasjon skinn ryggekamera adaptiv cruise dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf sportsvan  2.0 tdi (ea288) forhandler navigasjon skinn ryggekamera adaptiv cruise dab+" data-util-balansert="0.3865" data-fit-balansert="83" data-util-utenavstand="0.4005" data-fit-utenavstand="90" data-util-lavrisiko="0.4283" data-fit-lavrisiko="83" data-util-billigst="0.282" data-fit-billigst="90"
      onclick="openD('468504817')" onkeydown="if(event.key==='Enter')openD('468504817')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468504817/ec4dff06-9be3-432f-82be-87f3b5e4af6e" alt="">
@@ -3788,7 +3793,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="462679817" data-rank="89" data-risk="83" data-fit="69"
      data-net="21760" data-price="114432" data-km="146511"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii skien 1.4 tsi (ea211) privat skinnratt dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii skien 1.4 tsi (ea211) privat skinnratt dab+" data-util-balansert="0.3861" data-fit-balansert="69" data-util-utenavstand="0.4021" data-fit-utenavstand="77" data-util-lavrisiko="0.3217" data-fit-lavrisiko="69" data-util-billigst="0.4362" data-fit-billigst="77"
      onclick="openD('462679817')" onkeydown="if(event.key==='Enter')openD('462679817')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/462679817/90f99b0e-86e1-4d7a-b7b0-8830ff24b764" alt="">
@@ -3829,7 +3834,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468232165" data-rank="90" data-risk="58" data-fit="95"
      data-net="43783" data-price="139532" data-km="22412"
-     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan oslo 1.2 tsi (ea211) privat skinnratt dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan oslo 1.2 tsi (ea211) privat skinnratt dab+" data-util-balansert="0.379" data-fit-balansert="95" data-util-utenavstand="0.377" data-fit-utenavstand="94" data-util-lavrisiko="0.4029" data-fit-lavrisiko="95" data-util-billigst="0.267" data-fit-billigst="94"
      onclick="openD('468232165')" onkeydown="if(event.key==='Enter')openD('468232165')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468232165/4e42a119-8c0c-419f-933b-6ea7155275d6" alt="">
@@ -3870,7 +3875,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="464257331" data-rank="91" data-risk="56" data-fit="89"
      data-net="55286" data-price="159000" data-km="140000"
-     data-year="2015" data-front="0" data-search="volkswagen golf alltrack kolbotn 2.0 tdi (ea288) forhandler navigasjon skinn ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf alltrack kolbotn 2.0 tdi (ea288) forhandler navigasjon skinn ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt dab+" data-util-balansert="0.376" data-fit-balansert="89" data-util-utenavstand="0.37" data-fit-utenavstand="86" data-util-lavrisiko="0.4063" data-fit-lavrisiko="89" data-util-billigst="0.261" data-fit-billigst="86"
      onclick="openD('464257331')" onkeydown="if(event.key==='Enter')openD('464257331')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/464257331/aeaec024-d8e7-4bdd-9c15-23d0598e3d14" alt="">
@@ -3911,7 +3916,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="445050598" data-rank="92" data-risk="53" data-fit="81"
      data-net="85986" data-price="189700" data-km="146000"
-     data-year="2017" data-front="0" data-search="volkswagen golf alltrack moss 2.0 tdi (ea288) forhandler navigasjon skinn adaptiv cruise led/xenon lys alufelger skinnratt dab+"
+     data-year="2017" data-front="0" data-search="volkswagen golf alltrack moss 2.0 tdi (ea288) forhandler navigasjon skinn adaptiv cruise led/xenon lys alufelger skinnratt dab+" data-util-balansert="0.3735" data-fit-balansert="81" data-util-utenavstand="0.3835" data-fit-utenavstand="86" data-util-lavrisiko="0.4129" data-fit-lavrisiko="81" data-util-billigst="0.27" data-fit-billigst="86"
      onclick="openD('445050598')" onkeydown="if(event.key==='Enter')openD('445050598')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/445050598/212d3eda-f605-446d-954c-a572e15caefe" alt="">
@@ -3952,7 +3957,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="466414899" data-rank="93" data-risk="56" data-fit="86"
      data-net="41151" data-price="139000" data-km="67000"
-     data-year="2014" data-front="0" data-search="volkswagen golf sportsvan  1.4 tsi (ea211) forhandler alufelger skinnratt dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf sportsvan  1.4 tsi (ea211) forhandler alufelger skinnratt dab+" data-util-balansert="0.37" data-fit-balansert="86" data-util-utenavstand="0.384" data-fit-utenavstand="93" data-util-lavrisiko="0.4018" data-fit-lavrisiko="86" data-util-billigst="0.2715" data-fit-billigst="93"
      onclick="openD('466414899')" onkeydown="if(event.key==='Enter')openD('466414899')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/466414899/5e65171f-b20f-4a3b-b493-445b07e9445f" alt="">
@@ -3993,7 +3998,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467854811" data-rank="94" data-risk="60" data-fit="70"
      data-net="31286" data-price="135000" data-km="143800"
-     data-year="2013" data-front="0" data-search="volkswagen golf vii sandnes 2.0 tdi (ea288) forhandler navigasjon skinn ryggekamera adaptiv cruise led/xenon lys alufelger skinnratt dab+"
+     data-year="2013" data-front="0" data-search="volkswagen golf vii sandnes 2.0 tdi (ea288) forhandler navigasjon skinn ryggekamera adaptiv cruise led/xenon lys alufelger skinnratt dab+" data-util-balansert="0.3681" data-fit-balansert="70" data-util-utenavstand="0.3941" data-fit-utenavstand="83" data-util-lavrisiko="0.3846" data-fit-lavrisiko="70" data-util-billigst="0.3202" data-fit-billigst="83"
      onclick="openD('467854811')" onkeydown="if(event.key==='Enter')openD('467854811')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467854811/9129b8be-df9b-44a2-a331-671c209301d6" alt="">
@@ -4034,7 +4039,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="460373442" data-rank="95" data-risk="56" data-fit="85"
      data-net="39151" data-price="134900" data-km="104000"
-     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan  1.2 tsi (ea211) forhandler skinn adaptiv cruise led/xenon lys dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan  1.2 tsi (ea211) forhandler skinn adaptiv cruise led/xenon lys dab+" data-util-balansert="0.368" data-fit-balansert="85" data-util-utenavstand="0.38" data-fit-utenavstand="91" data-util-lavrisiko="0.4003" data-fit-lavrisiko="85" data-util-billigst="0.2685" data-fit-billigst="91"
      onclick="openD('460373442')" onkeydown="if(event.key==='Enter')openD('460373442')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/460373442/8fbd8bb6-d6a8-4952-a66d-1c38535d7fdd" alt="">
@@ -4075,7 +4080,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467411708" data-rank="96" data-risk="68" data-fit="84"
      data-net="31151" data-price="126900" data-km="126000"
-     data-year="2016" data-front="0" data-search="volkswagen golf vii drøbak 1.2 tsi (ea211) forhandler apple carplay navigasjon skinn adaptiv cruise led/xenon lys alufelger dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf vii drøbak 1.2 tsi (ea211) forhandler apple carplay navigasjon skinn adaptiv cruise led/xenon lys alufelger dab+" data-util-balansert="0.3619" data-fit-balansert="84" data-util-utenavstand="0.3639" data-fit-utenavstand="85" data-util-lavrisiko="0.3572" data-fit-lavrisiko="84" data-util-billigst="0.3019" data-fit-billigst="85"
      onclick="openD('467411708')" onkeydown="if(event.key==='Enter')openD('467411708')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467411708/979e2464-8c1d-4062-8409-78ca07b24040" alt="">
@@ -4116,7 +4121,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="466471481" data-rank="97" data-risk="59" data-fit="83"
      data-net="34151" data-price="129900" data-km="114373"
-     data-year="2016" data-front="0" data-search="volkswagen golf vii hønefoss 1.2 tsi (ea211) forhandler navigasjon ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf vii hønefoss 1.2 tsi (ea211) forhandler navigasjon ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme skinnratt dab+" data-util-balansert="0.3615" data-fit-balansert="83" data-util-utenavstand="0.3735" data-fit-utenavstand="89" data-util-lavrisiko="0.3859" data-fit-lavrisiko="83" data-util-billigst="0.2738" data-fit-billigst="89"
      onclick="openD('466471481')" onkeydown="if(event.key==='Enter')openD('466471481')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/466471481/14126a2c-480d-48a9-b1b9-4c79ab23aa1d" alt="">
@@ -4157,7 +4162,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467844333" data-rank="98" data-risk="55" data-fit="76"
      data-net="42141" data-price="139990" data-km="97000"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii kristiansand 1.4 tsi (ea211) forhandler navigasjon skinn adaptiv cruise led/xenon lys alufelger panorama/soltak skinnratt dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii kristiansand 1.4 tsi (ea211) forhandler navigasjon skinn adaptiv cruise led/xenon lys alufelger panorama/soltak skinnratt dab+" data-util-balansert="0.3545" data-fit-balansert="76" data-util-utenavstand="0.3845" data-fit-utenavstand="91" data-util-lavrisiko="0.393" data-fit-lavrisiko="76" data-util-billigst="0.2715" data-fit-billigst="91"
      onclick="openD('467844333')" onkeydown="if(event.key==='Enter')openD('467844333')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467844333/70b66638-312d-4a3a-9f83-35315d6af4d8" alt="">
@@ -4198,7 +4203,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468392601" data-rank="99" data-risk="60" data-fit="86"
      data-net="81151" data-price="179000" data-km="79156"
-     data-year="2017" data-front="0" data-search="volkswagen golf vii  1.4 tsi (ea211) forhandler ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme"
+     data-year="2017" data-front="0" data-search="volkswagen golf vii  1.4 tsi (ea211) forhandler ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme" data-util-balansert="0.352" data-fit-balansert="86" data-util-utenavstand="0.364" data-fit-utenavstand="92" data-util-lavrisiko="0.377" data-fit-lavrisiko="86" data-util-billigst="0.258" data-fit-billigst="92"
      onclick="openD('468392601')" onkeydown="if(event.key==='Enter')openD('468392601')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468392601/3148a43a-694c-4c5c-9478-8a30875e0874" alt="">
@@ -4239,7 +4244,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="465139055" data-rank="100" data-risk="54" data-fit="72"
      data-net="87473" data-price="191942" data-km="109540"
-     data-year="2014" data-front="0" data-search="volkswagen golf vii  golf gte (1.4 tsi plug-in hybrid) privat "
+     data-year="2014" data-front="0" data-search="volkswagen golf vii  golf gte (1.4 tsi plug-in hybrid) privat " data-util-balansert="0.351" data-fit-balansert="72" data-util-utenavstand="0.359" data-fit-utenavstand="76" data-util-lavrisiko="0.3932" data-fit-lavrisiko="72" data-util-billigst="0.252" data-fit-billigst="76"
      onclick="openD('465139055')" onkeydown="if(event.key==='Enter')openD('465139055')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/465139055/f45c8812-0193-4074-9746-2f2c7242e531" alt="">
@@ -4280,7 +4285,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467573616" data-rank="101" data-risk="57" data-fit="76"
      data-net="36013" data-price="136942" data-km="105500"
-     data-year="2014" data-front="0" data-search="volkswagen golf vii lillehammer 1.6 tdi (ea288) forhandler navigasjon alufelger parkeringsvarme skinnratt dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf vii lillehammer 1.6 tdi (ea288) forhandler navigasjon alufelger parkeringsvarme skinnratt dab+" data-util-balansert="0.3455" data-fit-balansert="76" data-util-utenavstand="0.3735" data-fit-utenavstand="90" data-util-lavrisiko="0.3806" data-fit-lavrisiko="76" data-util-billigst="0.264" data-fit-billigst="90"
      onclick="openD('467573616')" onkeydown="if(event.key==='Enter')openD('467573616')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467573616/41af28c0-413f-41c6-844a-da8c0ff458c4" alt="">
@@ -4321,7 +4326,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="465613351" data-rank="102" data-risk="61" data-fit="81"
      data-net="54151" data-price="149900" data-km="79400"
-     data-year="2017" data-front="0" data-search="volkswagen golf sportsvan fredrikstad 1.2 tsi (ea211) forhandler ryggekamera alufelger dab+"
+     data-year="2017" data-front="0" data-search="volkswagen golf sportsvan fredrikstad 1.2 tsi (ea211) forhandler ryggekamera alufelger dab+" data-util-balansert="0.3375" data-fit-balansert="81" data-util-utenavstand="0.3615" data-fit-utenavstand="93" data-util-lavrisiko="0.3633" data-fit-lavrisiko="81" data-util-billigst="0.2565" data-fit-billigst="93"
      onclick="openD('465613351')" onkeydown="if(event.key==='Enter')openD('465613351')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/465613351/42fd9154-7977-4612-af29-e94c485758f9" alt="">
@@ -4362,7 +4367,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="464328492" data-rank="103" data-risk="58" data-fit="71"
      data-net="66186" data-price="169900" data-km="136000"
-     data-year="2014" data-front="0" data-search="volkswagen golf vii kristiansand 2.0 tdi (ea288) forhandler parkeringsvarme"
+     data-year="2014" data-front="0" data-search="volkswagen golf vii kristiansand 2.0 tdi (ea288) forhandler parkeringsvarme" data-util-balansert="0.331" data-fit-balansert="71" data-util-utenavstand="0.359" data-fit-utenavstand="85" data-util-lavrisiko="0.3669" data-fit-lavrisiko="71" data-util-billigst="0.2535" data-fit-billigst="85"
      onclick="openD('464328492')" onkeydown="if(event.key==='Enter')openD('464328492')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/464328492/72e71263-c1f9-4273-b045-706abd7471be" alt="">
@@ -4403,7 +4408,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467760091" data-rank="104" data-risk="71" data-fit="74"
      data-net="31051" data-price="128900" data-km="123700"
-     data-year="2016" data-front="0" data-search="volkswagen golf vii kristiansand 1.4 tsi (ea211) forhandler navigasjon ryggekamera adaptiv cruise led/xenon lys alufelger skinnratt dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf vii kristiansand 1.4 tsi (ea211) forhandler navigasjon ryggekamera adaptiv cruise led/xenon lys alufelger skinnratt dab+" data-util-balansert="0.3297" data-fit-balansert="74" data-util-utenavstand="0.3577" data-fit-utenavstand="88" data-util-lavrisiko="0.3244" data-fit-lavrisiko="74" data-util-billigst="0.2994" data-fit-billigst="88"
      onclick="openD('467760091')" onkeydown="if(event.key==='Enter')openD('467760091')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467760091/dd1c8ce8-02dc-45ad-9c39-c81e48a576db" alt="">
@@ -4444,7 +4449,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="464365396" data-rank="105" data-risk="62" data-fit="72"
      data-net="34151" data-price="129900" data-km="136585"
-     data-year="2014" data-front="0" data-search="volkswagen golf vii kristiansand 1.2 tsi (ea211) forhandler navigasjon skinnratt dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf vii kristiansand 1.2 tsi (ea211) forhandler navigasjon skinnratt dab+" data-util-balansert="0.326" data-fit-balansert="72" data-util-utenavstand="0.354" data-fit-utenavstand="86" data-util-lavrisiko="0.3508" data-fit-lavrisiko="72" data-util-billigst="0.2603" data-fit-billigst="86"
      onclick="openD('464365396')" onkeydown="if(event.key==='Enter')openD('464365396')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/464365396/7789c868-8ed8-4482-9ead-c0c05165904a" alt="">
@@ -4485,7 +4490,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="427528464" data-rank="106" data-risk="61" data-fit="74"
      data-net="44151" data-price="139900" data-km="123680"
-     data-year="2016" data-front="0" data-search="volkswagen golf vii kristiansand 1.2 tsi (ea211) forhandler navigasjon skinn adaptiv cruise led/xenon lys alufelger skinnratt dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf vii kristiansand 1.2 tsi (ea211) forhandler navigasjon skinn adaptiv cruise led/xenon lys alufelger skinnratt dab+" data-util-balansert="0.3235" data-fit-balansert="74" data-util-utenavstand="0.3515" data-fit-utenavstand="88" data-util-lavrisiko="0.3528" data-fit-lavrisiko="74" data-util-billigst="0.249" data-fit-billigst="88"
      onclick="openD('427528464')" onkeydown="if(event.key==='Enter')openD('427528464')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/427528464/621ed706-a7cb-45ea-a365-323a553809cf" alt="">
@@ -4526,7 +4531,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="466539064" data-rank="107" data-risk="63" data-fit="78"
      data-net="61151" data-price="159000" data-km="125412"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii hamar 1.4 tsi (ea211) forhandler navigasjon skinn ryggekamera adaptiv cruise led/xenon lys parkeringsvarme skinnratt dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii hamar 1.4 tsi (ea211) forhandler navigasjon skinn ryggekamera adaptiv cruise led/xenon lys parkeringsvarme skinnratt dab+" data-util-balansert="0.3225" data-fit-balansert="78" data-util-utenavstand="0.3425" data-fit-utenavstand="88" data-util-lavrisiko="0.3464" data-fit-lavrisiko="78" data-util-billigst="0.243" data-fit-billigst="88"
      onclick="openD('466539064')" onkeydown="if(event.key==='Enter')openD('466539064')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/466539064/d003f33f-02ef-4fa5-9db5-2922daca1737" alt="">
@@ -4567,7 +4572,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467833442" data-rank="108" data-risk="65" data-fit="77"
      data-net="38603" data-price="139532" data-km="123000"
-     data-year="2015" data-front="0" data-search="volkswagen golf vii sarpsborg 1.6 tdi (ea288) privat navigasjon skinn adaptiv cruise led/xenon lys dab+"
+     data-year="2015" data-front="0" data-search="volkswagen golf vii sarpsborg 1.6 tdi (ea288) privat navigasjon skinn adaptiv cruise led/xenon lys dab+" data-util-balansert="0.3115" data-fit-balansert="77" data-util-utenavstand="0.3335" data-fit-utenavstand="88" data-util-lavrisiko="0.3325" data-fit-lavrisiko="77" data-util-billigst="0.237" data-fit-billigst="88"
      onclick="openD('467833442')" onkeydown="if(event.key==='Enter')openD('467833442')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467833442/dcb54178-3d5b-4454-925f-8c25545f2242" alt="">
@@ -4608,7 +4613,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="463785558" data-rank="109" data-risk="70" data-fit="82"
      data-net="42150" data-price="139999" data-km="117000"
-     data-year="2017" data-front="0" data-search="volkswagen golf vii vestby 1.4 tsi (ea211) forhandler navigasjon skinn ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme dab+"
+     data-year="2017" data-front="0" data-search="volkswagen golf vii vestby 1.4 tsi (ea211) forhandler navigasjon skinn ryggekamera adaptiv cruise led/xenon lys alufelger parkeringsvarme dab+" data-util-balansert="0.299" data-fit-balansert="82" data-util-utenavstand="0.311" data-fit-utenavstand="88" data-util-lavrisiko="0.309" data-fit-lavrisiko="82" data-util-billigst="0.222" data-fit-billigst="88"
      onclick="openD('463785558')" onkeydown="if(event.key==='Enter')openD('463785558')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/463785558/9aa86ceb-7246-4729-aa4e-7c4b17b17228" alt="">
@@ -4649,7 +4654,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="468391106" data-rank="110" data-risk="68" data-fit="72"
      data-net="34151" data-price="129900" data-km="101500"
-     data-year="2016" data-front="0" data-search="volkswagen golf vii bergen 1.2 tsi (ea211) forhandler skinn led/xenon lys parkeringsvarme dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf vii bergen 1.2 tsi (ea211) forhandler skinn led/xenon lys parkeringsvarme dab+" data-util-balansert="0.299" data-fit-balansert="72" data-util-utenavstand="0.327" data-fit-utenavstand="86" data-util-lavrisiko="0.3136" data-fit-lavrisiko="72" data-util-billigst="0.2423" data-fit-billigst="86"
      onclick="openD('468391106')" onkeydown="if(event.key==='Enter')openD('468391106')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/468391106/917bec82-1dc2-4b0c-a6c3-b02a5ac606ba" alt="">
@@ -4690,7 +4695,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467476078" data-rank="111" data-risk="68" data-fit="76"
      data-net="54250" data-price="149999" data-km="47000"
-     data-year="2014" data-front="0" data-search="volkswagen golf sportsvan vennesla 1.2 tsi (ea211) forhandler navigasjon skinn dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf sportsvan vennesla 1.2 tsi (ea211) forhandler navigasjon skinn dab+" data-util-balansert="0.296" data-fit-balansert="76" data-util-utenavstand="0.324" data-fit-utenavstand="90" data-util-lavrisiko="0.3124" data-fit-lavrisiko="76" data-util-billigst="0.231" data-fit-billigst="90"
      onclick="openD('467476078')" onkeydown="if(event.key==='Enter')openD('467476078')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467476078/987c8d26-c06c-447c-aa4a-3910cce6fd23" alt="">
@@ -4731,7 +4736,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467882687" data-rank="112" data-risk="71" data-fit="72"
      data-net="51151" data-price="149000" data-km="123600"
-     data-year="2014" data-front="0" data-search="volkswagen golf iii  1.4 tsi (ea211) forhandler navigasjon skinn led/xenon lys alufelger skinnratt dab+"
+     data-year="2014" data-front="0" data-search="volkswagen golf iii  1.4 tsi (ea211) forhandler navigasjon skinn led/xenon lys alufelger skinnratt dab+" data-util-balansert="0.2745" data-fit-balansert="72" data-util-utenavstand="0.2825" data-fit-utenavstand="76" data-util-lavrisiko="0.2878" data-fit-lavrisiko="72" data-util-billigst="0.201" data-fit-billigst="76"
      onclick="openD('467882687')" onkeydown="if(event.key==='Enter')openD('467882687')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467882687/154ec917-7b5f-4587-b8e6-6936810137ef" alt="">
@@ -4772,7 +4777,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="467892455" data-rank="113" data-risk="79" data-fit="89"
      data-net="42387" data-price="138136" data-km="128454"
-     data-year="2016" data-front="0" data-search="volkswagen golf vii oslo 1.2 tsi (ea211) privat apple carplay navigasjon skinn led/xenon lys alufelger parkeringsvarme skinnratt dab+"
+     data-year="2016" data-front="0" data-search="volkswagen golf vii oslo 1.2 tsi (ea211) privat apple carplay navigasjon skinn led/xenon lys alufelger parkeringsvarme skinnratt dab+" data-util-balansert="0.2725" data-fit-balansert="89" data-util-utenavstand="0.2685" data-fit-utenavstand="87" data-util-lavrisiko="0.2637" data-fit-lavrisiko="89" data-util-billigst="0.1935" data-fit-billigst="87"
      onclick="openD('467892455')" onkeydown="if(event.key==='Enter')openD('467892455')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/467892455/8b021f0b-58da-4f4b-8bf6-bb5b7b165246" alt="">
@@ -4813,7 +4818,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
 <article class="card" tabindex="0" role="button"
      data-id="465572370" data-rank="114" data-risk="80" data-fit="70"
      data-net="43251" data-price="139000" data-km="144348"
-     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan kristiansund 1.2 tsi (ea211) forhandler skinn adaptiv cruise led/xenon lys panorama/soltak"
+     data-year="2015" data-front="0" data-search="volkswagen golf sportsvan kristiansund 1.2 tsi (ea211) forhandler skinn adaptiv cruise led/xenon lys panorama/soltak" data-util-balansert="0.23" data-fit-balansert="70" data-util-utenavstand="0.258" data-fit-utenavstand="84" data-util-lavrisiko="0.229" data-fit-lavrisiko="70" data-util-billigst="0.186" data-fit-billigst="84"
      onclick="openD('465572370')" onkeydown="if(event.key==='Enter')openD('465572370')">
     <div class="card-img">
       <img loading="lazy" src="https://images.finncdn.no/dynamic/640w/item/465572370/ba077c7a-d202-4e41-af71-a1dc25130629" alt="">
@@ -4853,7 +4858,7 @@ footer{max-width:1280px;margin:0 auto;padding:0 24px 50px;color:var(--soft);font
     </div></article>
 </div></div>
 
-<footer>Beslutningsgrunnlag — ikke finansiell/juridisk/forsikrings-/skatterådgivning. Verifiser garanti, stand og historikk før kjøp. Pareto-front = ingen annen bil slår denne på både pris og risiko. Generert 2026-06-30 14:41.</footer>
+<footer>Beslutningsgrunnlag — ikke finansiell/juridisk/forsikrings-/skatterådgivning. Verifiser garanti, stand og historikk før kjøp. Pareto-front = ingen annen bil slår denne på både pris og risiko. Generert 2026-07-01 20:17.</footer>
 
 <div class="detail-src" id="src-467986417"><div class="dw-head">
      <div class="dw-rank mono">#1</div>
@@ -10932,13 +10937,20 @@ function applyF(){
   });
   $('count').textContent=n;
 }
-var SORT={rank:['rank',1],risk:['risk',1],net:['net',1],km:['km',1],year:['year',-1]};
-function setSort(key){
-  var s=SORT[key]||['rank',1];
-  cards().sort(function(a,b){return (+a.dataset[s[0]]-+b.dataset[s[0]])*s[1]}).forEach(function(c){grid.appendChild(c)});
+var SORT={risk:['risk',1],net:['net',1],km:['km',1],year:['year',-1]};
+var profile='balansert', curSort='rank';
+function fitCol(v){return v>=67?'var(--good)':v>=40?'var(--warn)':'var(--bad)'}
+function updateFits(){cards().forEach(function(c){var v=+c.getAttribute('data-fit-'+profile);if(isNaN(v))return;var g=c.querySelectorAll('.gauge')[1];if(!g)return;var num=g.querySelector('.g-num'),val=g.querySelector('.g-val');num.textContent=v;num.style.color=fitCol(v);val.style.stroke=fitCol(v);val.setAttribute('stroke-dasharray',(v/100*131.95).toFixed(1)+' 999')})}
+function setSort(key){curSort=key;
   document.querySelectorAll('.preset').forEach(function(p){p.classList.toggle('on',p.dataset.sort===key)});
+  var arr=cards();
+  if(key==='rank'){arr.sort(function(a,b){return (+b.getAttribute('data-util-'+profile))-(+a.getAttribute('data-util-'+profile))})}
+  else{var s=SORT[key]||['risk',1];arr.sort(function(a,b){return (+a.dataset[s[0]]-+b.dataset[s[0]])*s[1]})}
+  arr.forEach(function(c){grid.appendChild(c)});
 }
+function setProfile(k){profile=k;document.querySelectorAll('.pbtn').forEach(function(b){b.classList.toggle('on',b.dataset.profile===k)});updateFits();setSort(curSort)}
 document.querySelectorAll('.preset').forEach(function(p){p.addEventListener('click',function(){setSort(p.dataset.sort)})});
+document.querySelectorAll('.pbtn').forEach(function(b){b.addEventListener('click',function(){setProfile(b.dataset.profile)})});
 $('fSearch').addEventListener('input',applyF);
 $('fFront').addEventListener('change',applyF);
 applyF();
